@@ -79,8 +79,10 @@ p {
                   alert("Type passcode")
                } else {
                   if (result == passcode) {
-                     <button onclick="edit.html">Enter</button>;
-                     
+                     <button onclick="edit()">Enter</button>;
+                     function edit() {
+                         <a href="edit.html">Enter</a>;
+                     }   
                   } else {
                      alert("Incorrect Passcode");
                      location.reload();
