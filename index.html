@@ -42,13 +42,7 @@ h2 {
     color: #9c5708;
     text-align: center;
 } 
-    
-h3 {
-    font-family: Georgia, Serif;
-    font-size: 10px;
-    text-align: right;
-} 
-    
+
 p {
     font-family: "Courier New", Monospace;
     font-size: 25px;
@@ -59,32 +53,6 @@ p {
 </style>   
 </head>    
 <body>
-    <label for="redi">Red:</label>
-     <input type="range" min=0 max=255 id="redi" onmousemove="changeColor()"
-           onmouseup="showValues()" value="125" /> <span id="redv"></span><br>
-     <label for="greeni">Green:</label>
-     <input type="range" min=0 max=255 id="greeni" onmousemove="changeColor()"
-           onmouseup="showValues()" value="125" /><span id="greenv"></span><br>
-     <label for="bluei">Blue:</label>
-     <input type="range" min=0 max=255 id="bluei" onmousemove="changeColor()"
-           onmouseup="showValues()" value="200" /><span id="bluev"></span>
-
-     <br>
-     <script>
-       changeColor = function() {
-           red = document.querySelector('#redi').value;
-           green = document.querySelector('#greeni').value;
-           blue = document.querySelector('#bluei').value;
-           colorStr = "rgb(" + red + "," + green + "," + blue + ")";
-           document.body.style.backgroundColor = colorStr;
-       }
-       showValues = function() {
-         document.querySelector('#redv').innerHTML = document.querySelector("#redi").value;
-         document.querySelector('#greenv').innerHTML = document.querySelector("#greeni").value;
-         document.querySelector('#bluev').innerHTML = document.querySelector("#bluei").value;
-       }
-       window.onload = function() { changeColor(); showValues(); }
-     </script>
 <h1>~~~~~ 📺 Show & Share ✏️ ~~~~~</h1>     
 <table class="center">
   <tr>
@@ -99,12 +67,12 @@ p {
   </tr> 
 </table>
 <h2>This is a place that you can not only rate and categorize the television shows you've watched, but also see your friends ratings for the same show!</h2>
-<h3>Here is the site to edit your background colors!<form action="edit.html">
+<h2>Here is the site to edit your background colors!<form action="edit.html">
   <label for="pwd">Password:</label>
   <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
   <input type="submit">
 </form>
-</h3>
+</h2>
 <p>You can find the link <a href="https://www.imdb.com/user/ur126019820/ratings/?title_type=tv_series%2Ctv_miniseries&sort=my_ratings%2Cdesc"target="_blank">here</a> 
     to iMDb for my favorite shows and some inspiration on your next watches 😁 </p>
 </body>
