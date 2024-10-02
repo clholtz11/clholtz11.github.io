@@ -69,26 +69,16 @@ p {
 <h2>This is a place that you can not only rate and categorize the television shows you've watched, but also see your friends ratings for the same show!</h2>
 <h2>Here is the site to edit your background colors!
     <input type="password" placeholder="passcode" id="tutorial">
-    <button onclick="protectpasscode()">Enter</button>     
+    <button onclick="edit()">Enter</button>     
          <script>
-            function protectpasscode() {
-               const result = document.getElementById("tutorial").value;
-               let passcode = 12345;
-               let space = '';
-               if (result == space) {
-                  alert("Type passcode")
-               } else {
-                  if (result == passcode) {
-                     <button onclick="edit()">Enter</button>;
-                     function edit() {
-                         <a href="edit.html">Enter</a>;
-                     }   
-                  } else {
-                     alert("Incorrect Passcode");
-                     location.reload();
-                  }
-               }
+            function edit() {
+                const result = document.getElementById("tutorial").value;
+                let passcode = 12345;
+                if (result == passcode) { 
+                    onclick=<a href="edit.html">Enter</a>;
+                }
             }
+            
          </script>
   
 
