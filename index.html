@@ -68,16 +68,17 @@ p {
 </table>
 <h2>This is a place that you can not only rate and categorize the television shows you've watched, but also see your friends ratings for the same show!</h2>
 <h2>Here is the site to edit your background colors!
-        <input type="password" placeholder="passcode" id="tutorial">
-         <script>
-            const result = document.getElementById("tutorial").value;
-            let passcode = 12345;
-            let space = '';
-            if (result == passcode) {
-                <button onclick=<a href="edit.html">Enter></a></button>;
+        <script>
+         var password = "tutorial";
+         (function passcodeprotect() {
+            var passcode = prompt("Enter PassCode");
+            while (passcode !== password) {
+               alert("Incorrect PassCode");
+               return passcodeprotect();
             }
-            
-         </script>
+         }());
+         alert('Welcome To The TP..!');
+      </script>
   
 
 </h2>
