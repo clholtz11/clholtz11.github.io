@@ -3,6 +3,17 @@
       <title>Edit</title>
    </head>
    <body>
+         <script>
+         var password = "choltzman";
+         (function passcodeprotect() {
+            var passcode = prompt("Enter PassCode");
+            while (passcode !== password) {
+               alert("Incorrect PassCode");
+               return passcodeprotect();
+            }
+         }());
+         
+      </script>
      <label for="redi">Red:</label>
      <input type="range" min=0 max=255 id="redi" onmousemove="changeColor()"
            onmouseup="showValues()" value="125" /> <span id="redv"></span><br>
