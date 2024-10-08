@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <head>
       <title>Edit</title>
-      body {
+      <style>
+            body {
           function fetchWebsiteColor() {
         let response = fetch('https://clholtz11.github.io/edit.html'); 
         let color = response.data.color;
           }
           setInterval(fetchWebsiteColor, 5000);
-      }
+            }
+      </style>
    </head>
    <body>
          <script>
