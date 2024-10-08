@@ -51,14 +51,8 @@ p {
 }    
     
   body {
-     function updateColor() {
-        fetch('/api/getColor') 
-        .then(response => response.json())
-        .then(data => {
-            document.body.style.backgroundColor = data.color;
-        });
-    }
-    setInterval(updateColor, 5000);  
+         <body style="background-color: {{color}};">
+ 
 }
 </style>   
 </head>    
