@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <head>
       <title>Edit</title>
+      body {
+          function fetchWebsiteColor() {
+        let response = fetch('https://clholtz11.github.io/edit.html'); 
+        let color = response.data.color;
+          }
+          setInterval(fetchWebsiteColor, 5000);
+      }
    </head>
    <body>
          <script>
