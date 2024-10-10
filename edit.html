@@ -31,7 +31,7 @@
            red = document.querySelector('#redi').value;
            green = document.querySelector('#greeni').value;
            blue = document.querySelector('#bluei').value;
-           colorStr = "rgb(" + red + "," + green + "," + blue + ")";  
+           localStorage.setItem('backgroundColor', colorStr = "rgb(" + red + "," + green + "," + blue + ")");  
        }
        showValues = function() {
          document.querySelector('#redv').innerHTML = document.querySelector("#redi").value;
@@ -42,7 +42,7 @@
       
 
      </script>
-      <script>localStorage.setItem('backgroundColor', colorStr);</script>
+     
          <button onclick="color">Set Color</button>
             <a href="index.html">Home</a> 
    </body>
