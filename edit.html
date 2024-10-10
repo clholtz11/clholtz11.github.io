@@ -38,12 +38,11 @@
          document.querySelector('#greenv').innerHTML = document.querySelector("#greeni").value;
          document.querySelector('#bluev').innerHTML = document.querySelector("#bluei").value;
        }
-      function storeCurrentColor() { // Stores the current background color (which was stored in bgcolor) in localStorage
+       window.onload = function() { changeColor(); showValues(); }
+           function storeCurrentColor() { 
     window.localStorage.setItem("bgcolor", colorStr);
 }
-       window.onload = function() { changeColor(); showValues(); }
-      let color = document.body.style.backgroundColor;
-      color = localStorage.bgcolor;
+      
      </script>
          <button onclick="color">Set Color</button>
             <a href="index.html">Home</a> 
