@@ -13,7 +13,15 @@
             return passcodeprotect();
         }
     })();
-
+</script>
+<label for="redi">Red: </label>
+<input type="range" min=0 max=255 id="redi" onmousemove="changeColor ()" onmouseup="showValues ()" value="125" /> <span id="redv"></span><br>
+<<label for="greeni">Green:</label>
+<input type="range" min=0 max=255 id="greeni" onmousemove="changeColor ()" onmouseup="showValues ()" value="125" /><span id="greenv"></span><br>
+<label for="bluei">Blue:</label>
+<input type="range" min=0 max=255 id="bluei" onmousemove="changeColor ()" onmouseup="showValues ()" value="200" /><span id="bluev"></span>
+<br>
+<script>
     function changeColor() {
         var red = document.querySelector("#redi").value;
         var green = document.querySelector("#greeni").value;
