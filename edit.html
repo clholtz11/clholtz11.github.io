@@ -31,8 +31,7 @@
            red = document.querySelector('#redi').value;
            green = document.querySelector('#greeni').value;
            blue = document.querySelector('#bluei').value;
-           colorStr = "rgb(" + red + "," + green + "," + blue + ")";
-           document.body.style.backgroundColor = colorStr;   
+           colorStr = "rgb(" + red + "," + green + "," + blue + ")";  
        }
        showValues = function() {
          document.querySelector('#redv').innerHTML = document.querySelector("#redi").value;
@@ -40,8 +39,8 @@
          document.querySelector('#bluev').innerHTML = document.querySelector("#bluei").value;
        }
        window.onload = function() { changeColor(); showValues(); }
-      let color = document.body.style.backgroundColor;
-      color = localStorage.bgcolor;
+      localStorage.setItem('backgroundColor', colorStr);
+
      </script>
          <button onclick="color">Set Color</button>
             <a href="index.html">Home</a> 
