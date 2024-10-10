@@ -39,9 +39,10 @@
          document.querySelector('#bluev').innerHTML = document.querySelector("#bluei").value;
        }
        window.onload = function() { changeColor(); showValues(); }
-      localStorage.setItem('backgroundColor', colorStr);
+      
 
      </script>
+      <script>localStorage.setItem('backgroundColor', colorStr);</script>
          <button onclick="color">Set Color</button>
             <a href="index.html">Home</a> 
    </body>
