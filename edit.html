@@ -28,10 +28,10 @@
         document.querySelector("#greenv").innerHTML = document.querySelector("#greeni").value;
         document.querySelector("#bluev").innerHTML = document.querySelector("#bluei").value;
     }
-
     window.onload = function() {
-        changeColor();
-        showValues();
+        changeColor(); showValues(); }
+    window.onload = function() {
+        
         if (localStorage.getItem("backgroundColor")) {
             document.body.style.backgroundColor = localStorage.getItem("backgroundColor");
         }
