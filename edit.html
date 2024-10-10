@@ -19,9 +19,7 @@
         var green = document.querySelector("#greeni").value;
         var blue = document.querySelector("#bluei").value;
         var colorStr = "rgb(" + red + "," + green + "," + blue + ")";
-        document.body.style.backgroundColor = colorStr;
-
-        // Save the color in localStorage
+        
         localStorage.setItem("backgroundColor", colorStr);
     }
 
@@ -32,7 +30,7 @@
     }
 
     window.onload = function() {
-        // Check if a color is saved in localStorage and apply it
+        
         if (localStorage.getItem("backgroundColor")) {
             document.body.style.backgroundColor = localStorage.getItem("backgroundColor");
         }
