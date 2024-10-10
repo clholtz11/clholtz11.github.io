@@ -23,11 +23,11 @@
 <br>
 <script>
     function changeColor() {
-        red = document.querySelector("#redi").value;
-        green = document.querySelector("#greeni").value;
-        blue = document.querySelector("#bluei").value;
-        colorStr = "rgb(" + red + "," + green + "," + blue + ")";
-        
+        var red = document.querySelector("#redi").value;
+        var green = document.querySelector("#greeni").value;
+        var blue = document.querySelector("#bluei").value;
+        var colorStr = "rgb(" + red + "," + green + "," + blue + ")";
+        document.body.style.backgroundColor = colorStr;
         localStorage.setItem("backgroundColor", colorStr);
     }
 
