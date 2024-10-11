@@ -2,6 +2,13 @@
 <html>
 <head>
 <title>Shows</title>
+<script>
+    window.onload = function() {
+        if (localStorage.getItem("backgroundColor")) {
+            document.body.style.backgroundColor = localStorage.getItem("backgroundColor");
+        }
+    }
+</script>
 <style>
     
 table, td, th {
