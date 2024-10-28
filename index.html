@@ -10,7 +10,55 @@
     }
 </script>
 <style>
-   table, td, th {
+
+nav {
+    float: left;
+    background: #FDD;
+}
+
+nav ul {
+     background: white;
+     border: 2px solid;
+}
+
+nav li {
+     position: relative;
+     list-style: none;
+     border-bottom: 2px solid #CCC;
+}
+
+nav ul ul {
+    position: absolute;
+    display: none;
+}
+
+nav li a {
+    display: block;
+    padding: 0.25em 0 0.25em 0.5em;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background: #6F99F2;
+}
+
+nav li.submenu {
+    background: url(https://clholtz11.github.io/index.html) 95% 50% no-repeat;
+}
+
+nav li.submenu:hover {
+    background-color: #EDD;
+}
+
+
+
+nav ul.level1 li.submenu:hover ul.level2,
+nav ul.level2 li.submenu:hover ul.level3 {
+    display:block;
+}
+
+    
+table, td, th {
     border: 3px solid; 
 }
 
@@ -59,7 +107,54 @@ p {
 </style>   
 </head>    
 <body>
-<h1>~~~~~ 📺 Show & Share ✏️ ~~~~~</h1>     
+<h1>~~~~~ 📺 Show & Share ✏️ ~~~~~</h1>
+
+<nav>
+<ul class='level1'>
+ <li><a href="index.html">Home Page</a></li>
+ <li class='submenu'><a href='#'>By Ranking</a>
+  <ul class='level2'>
+   <li><a href="moviesrank.html">Movies</a></li>
+   <li><a href="showsrank.html">TV Shows</a></li>
+  </ul>
+ </li>
+ <li class='submenu'><a href='#'>By Genre</a>
+  <ul class='level2'>
+   <li><a href='#'>Comedy</a></li>
+   <li><a href='#'>Family</a></li>
+   <li><a href='#'>Drama</a></li>
+   <li><a href='#'>Horror</a></li>
+  </ul>
+ </li>
+ <li class='submenu'><a href='#'>By Streaming Service</a>
+  <ul class='level2'>
+   <li><a href='#'>Netflix</a></li>
+   <li><a href='#'>Max</a></li>
+   <li><a href='#'>Disney +</a></li>
+   <li><a href='#'>Hulu</a></li>
+   <li><a href='#'>Peacock</a></li>
+   <li><a href='#'>Paramount +</a></li>
+   <li><a href='#'>Apple TV +</a></li>
+  </ul>
+ </li>
+ <li class='submenu'><a href='#'>My Ratings</a>
+  <ul class='level2'>
+   <li><a href='#'>Gilmore Girls</a></li>
+   <li><a href='#'>Friends</a></li>
+   <li><a href='#'>How I Met Your Mother</a></li>
+   <li><a href='#'>One Tree Hill</a></li>
+   <li><a href='#'>The Middle</a></li>
+   <li><a href='#'>New Girl</a></li>
+   <li><a href='#'>The Fosters</a></li>
+   <li><a href='#'>Beverly Hills 90210</a></li>
+   <li><a href='#'>Once Upon A Time</a></li>
+   <li><a href='#'>Heartland</a></li>
+  </ul>
+ </li>
+</ul>
+</nav>
+
+    
 <table class="center">
   <tr>
     <td class="column"><a href="index.html">Home Page</a></td>
