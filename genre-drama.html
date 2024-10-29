@@ -1,0 +1,188 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>Show & Share Homepage</title>  
+<script>
+    window.onload = function() {
+        if (localStorage.getItem("backgroundColor")) {
+            document.body.style.backgroundColor = localStorage.getItem("backgroundColor");
+        }
+    }
+</script>
+<style>
+    
+* {
+  box-sizing: border-box;
+}
+    
+header {
+  font-family: "Bradley Hand", Cursive;
+  font-weight: bold;
+  color: #f05133;
+  text-align: center;
+  background-color: snow;
+  padding: 20px;
+  text-align: center;
+  font-size: 40px; 
+}
+    
+nav {
+    float: left;
+    font-size: 25px;
+    font-style: italic;
+    background: sandybrown;  
+  	width: 30%;
+  	height: 290px; 
+  	background: #9c5708;
+  	padding: 20px;
+}
+
+nav ul {
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     background: sandybrown; 
+}
+
+nav li {
+     position: relative;
+     list-style: none;
+     margin: 0;
+     border: 3px solid #9c5708;
+}
+
+nav ul ul {
+    position: absolute;
+    top: -3px;
+    left: 100%;
+    font-size: 25px;
+    display: none;
+}
+
+nav li a {
+    display: block;
+    padding: 0.25em 0 0.25em 0.5em;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background: snow;
+}
+
+nav li.submenu {
+    background: url(https://clholtz11.github.io/index.html) 95% 50% no-repeat;
+}
+
+nav li.submenu:hover {
+    background-color: snow;
+}
+
+nav ul.level1 li.submenu:hover ul.level2, nav ul.level2 li.submenu:hover ul.level3 {
+    display:block;
+}
+
+article {
+  float: left;
+  padding: 50px;
+  width: 70%;
+  background-color: #9c5708;
+  height: 290px;
+}
+    
+h2 {
+    font-family: Georgia, Serif;
+    font-size: 65px;
+    color: snow;
+    text-align: center;
+    margin: auto;
+} 
+
+p {
+    font-family: "Courier New", Monospace;
+    font-size: 50px;
+    color: sandybrown;
+    text-align: center; 
+    margin: auto;
+} 
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+    
+</style>   
+</head>    
+<body>
+<header>
+    <h1>📺 Show & Share ✏️</h1>
+</header>
+<section>
+<nav>
+<ul class='level1'>
+ <li><a href="index.html">Home Page</a></li>
+ <li class='submenu'><a href='#'>By Ranking</a>
+  <ul class='level2'>
+   <li><a href="moviesrank.html">Movies</a></li>
+   <li><a href="showsrank.html">TV Shows</a></li>
+  </ul>
+ </li>
+ <li class='submenu'><a href='#'>By Genre</a>
+  <ul class='level2'>
+   <li><a href="genre-comedy.html">Comedy</a></li>
+   <li><a href="genre-family.html">Family</a></li>
+   <li><a href="genre-drama.html">Drama</a></li>
+   <li><a href="genre-horror.html">Horror</a></li>
+  </ul>
+ </li>
+ <li class='submenu'><a href='#'>By Streaming Service</a>
+  <ul class='level2'>
+   <li><a href="stream-netflix.html">Netflix</a></li>
+   <li><a href="stream-max.html">Max</a></li>
+   <li><a href="stream-disneyplus.html">Disney +</a></li>
+   <li><a href="stream-hulu.html">Hulu</a></li>
+   <li><a href="stream-peacock.html">Peacock</a></li>
+   <li><a href="stream-paramountplus.html">Paramount +</a></li>
+   <li><a href="stream-appletvplus.html">Apple TV +</a></li>
+  </ul>
+ </li>
+ <li class='submenu'><a href='#'>My Ratings</a>
+  <ul class='level2'>
+   <li><a href="gilmoregirls.html">Gilmore Girls</a></li>
+   <li><a href="friends.html">Friends</a></li>
+   <li><a href="himym.html">How I Met Your Mother</a></li>
+   <li><a href="onetreehill.html">One Tree Hill</a></li>
+   <li><a href="themiddle.html">The Middle</a></li>
+   <li><a href="newgirl.html">New Girl</a></li>
+   <li><a href="thefosters.html">The Fosters</a></li>
+   <li><a href="bevhills90210.html">Beverly Hills 90210</a></li>
+   <li><a href="onceuponatime.html">Once Upon A Time</a></li>
+   <li><a href="heartland.html">Heartland</a></li>
+  </ul>
+ </li>
+</ul>
+</nav>
+<article>
+    <h2>Genre</h2>
+    <hr>
+    <p>Drama</p>
+</article>
+</section>
+<footer>
+   
+</footer>
+</body>
+</html>
