@@ -222,7 +222,7 @@ footer {
    </table>
    <div id="info-box">
       <hr>
-      <h2><strong>Click one of the rows to see more information about my #1 show: Gilmore Girls!</strong></h2>
+      <h3><strong>Click one of the rows to see more information about my #1 show: Gilmore Girls!</strong></h3>
    </div>
 
    <script>
@@ -238,7 +238,8 @@ function showInfo(title, file) {
       })
       .then(data => {
         infoBox.innerHTML = `
-          <h2>${title}</h2>
+          <hr>
+          <h2 style="color: #9c5708">${title}</h2>
           <hr>
           <h3>${data}</h3>
         `;
