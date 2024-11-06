@@ -205,7 +205,7 @@ footer {
 <footer>
    <table>
      <tr>
-        <th onclick="showInfo('Summary')">Summary</th>
+        <th onclick="showInfo('Summary', 'gg_summary.txt')">Summary</th>
         <th onclick="showInfo('Rating & Runtime')">Rating & Runtime</th>
         <th onclick="showInfo('Main Cast & Crew')">Main Cast & Crew</th>
         <th onclick="showInfo('Trivia')">Trivia</th>
@@ -216,20 +216,36 @@ footer {
       <p><strong>Click a row to see more information here.</strong></p>
    </div>
 
-   <!-- JavaScript to handle the click and update information -->
    <script>
-     function showInfo(id, name, country) {
-     // Get the info-box div
-     const infoBox = document.getElementById('info-box');
+function showInfo(title, file) {
+    // Get the info-box div
+    const infoBox = document.getElementById('info-box');
+    
+    // Set a loading message while fetching the content
+    infoBox.innerHTML = `<p>Loading ${title}...</p>`;
+    
+    // Fetch content from the provided file
+    fetch(file)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`Could not load ${file}`);
+        }
+        return response.text(); // Read the file content as plain text
+      })
+      .then(data => {
+        // Update the content of the info-box once the file is loaded
+        infoBox.innerHTML = `
+          <h3>${title}</h3>
+          <p>${data}</p>
+        `;
+      })
+      .catch(error => {
+        // Handle errors (e.g., file not found or loading error)
+        infoBox.innerHTML = `<p>Error loading content: ${error.message}</p>`;
+      });
+}
+</script>
 
-    // Set the new content based on clicked row
-    infoBox.innerHTML = `
-      <h3>Details for ID: ${id}</h3>
-      <p><strong>Name:</strong> ${name}</p>
-      <p><strong>Country:</strong> ${country}</p>
-    `;
-  }
-  </script>
 </footer>
 </body>
 </html>
