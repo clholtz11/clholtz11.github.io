@@ -218,10 +218,10 @@ footer {
    <table>
      <tr>
         <th onclick="showInfo('Summary', 'gg_summary.txt')">Summary</th>
-        <th onclick="showInfo('Rating & Runtime')">Rating & Runtime</th>
-        <th onclick="showInfo('Main Cast & Crew')">Main Cast & Crew</th>
-        <th onclick="showInfo('Trivia')">Trivia</th>
-        <th onclick="showInfo('Genre, Theme Song, etc.')">Genre, Theme Song, etc.</th>
+        <th onclick="showInfo('Rating & Runtime', 'gg_raterun')">Rating & Runtime</th>
+        <th onclick="showInfo('Main Cast & Crew', 'gg_castcrew')">Main Cast & Crew</th>
+        <th onclick="showInfo('Trivia', 'gg_trivia')">Trivia</th>
+        <th onclick="showInfo('Genre, Theme Song, etc.', 'gg_genrets')">Genre, Theme Song, etc.</th>
      </tr>
    </table>
    <div id="info-box">
@@ -241,7 +241,7 @@ function showInfo(title, file) {
         if (!response.ok) {
           throw new Error(`Could not load ${file}`);
         }
-        return response.text(); // Read the file content as plain text
+        return response.text(); 
       })
       .then(data => {
         infoBox.innerHTML = `
