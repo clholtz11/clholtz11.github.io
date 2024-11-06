@@ -122,6 +122,14 @@ h2 {
     margin: auto;
 } 
 
+h3 {
+    font-family: Georgia, Serif;
+    font-size: 30px;
+    color: snow;
+    text-align: center;
+    margin: auto;
+}
+
 p {
     font-family: "Courier New", Monospace;
     font-size: 50px;
@@ -213,18 +221,14 @@ footer {
      </tr>
    </table>
    <div id="info-box">
-      <p><strong>Click a row to see more information here.</strong></p>
+      <hr>
+      <h2><strong>Click one of the rows to see more information about my #1 show: Gilmore Girls!</strong></h2>
    </div>
 
    <script>
 function showInfo(title, file) {
-    // Get the info-box div
     const infoBox = document.getElementById('info-box');
-    
-    // Set a loading message while fetching the content
     infoBox.innerHTML = `<p>Loading ${title}...</p>`;
-    
-    // Fetch content from the provided file
     fetch(file)
       .then(response => {
         if (!response.ok) {
@@ -233,14 +237,13 @@ function showInfo(title, file) {
         return response.text(); // Read the file content as plain text
       })
       .then(data => {
-        // Update the content of the info-box once the file is loaded
         infoBox.innerHTML = `
-          <h3>${title}</h3>
-          <p>${data}</p>
+          <h2>${title}</h2>
+          <hr>
+          <h3>${data}</h3>
         `;
       })
       .catch(error => {
-        // Handle errors (e.g., file not found or loading error)
         infoBox.innerHTML = `<p>Error loading content: ${error.message}</p>`;
       });
 }
