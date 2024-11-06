@@ -27,6 +27,7 @@ table {
   color: sandybrown;
   font-size: 35px;
   font-family: "Bradley Hand", Cursive;
+  cursor: pointer;
 }  
 
 th:hover {background-color: snow;}
@@ -204,13 +205,31 @@ footer {
 <footer>
    <table>
      <tr>
-        <th>Summary</th>
-        <th>Rating & Runtime</th>
-        <th>Main Cast & Crew</th>
-        <th>Trivia</th>
-        <th>Genre, Theme Song, etc.</th>
+        <th onclick="showInfo('Summary')">Summary</th>
+        <th onclick="showInfo('Rating & Runtime')">Rating & Runtime</th>
+        <th onclick="showInfo('Main Cast & Crew')">Main Cast & Crew</th>
+        <th onclick="showInfo('Trivia')">Trivia</th>
+        <th onclick="showInfo('Genre, Theme Song, etc.')">Genre, Theme Song, etc.</th>
      </tr>
    </table>
+   <div id="info-box">
+      <p><strong>Click a row to see more information here.</strong></p>
+   </div>
+
+   <!-- JavaScript to handle the click and update information -->
+   <script>
+     function showInfo(id, name, country) {
+     // Get the info-box div
+     const infoBox = document.getElementById('info-box');
+
+    // Set the new content based on clicked row
+    infoBox.innerHTML = `
+      <h3>Details for ID: ${id}</h3>
+      <p><strong>Name:</strong> ${name}</p>
+      <p><strong>Country:</strong> ${country}</p>
+    `;
+  }
+  </script>
 </footer>
 </body>
 </html>
