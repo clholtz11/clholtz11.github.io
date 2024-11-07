@@ -11,6 +11,3 @@
   where everyone knows each other. Other notable characters include Luke, 
   who owns the diner, and Miss Patty, who teaches dance.
 </div>
-.preserve-line-breaks {
-  white-space: pre-line;
-}
