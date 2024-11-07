@@ -10,6 +10,18 @@
     }
 </script>
 <style>
+
+a {
+    color: #3a5946;
+}
+    
+a:visited {
+    color: #3a5946;
+}
+ 
+a:active {
+    color: #3a5946;
+}
     
 * {
   box-sizing: border-box;
@@ -21,27 +33,27 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-}  
+}    
     
 header {
   font-family: "Bradley Hand", Cursive;
   font-weight: bold;
-  color: #f05133;
+  color: #3a5946;
   text-align: center;
-  background-color: snow;
+  background-color: #fee0ae;
   padding: 20px;
   text-align: center;
-  font-size: 40px; 
+  font-size: 40px;
 }
     
 nav {
     float: left;
     font-size: 25px;
     font-style: italic;
-    background: sandybrown;  
+    background: #80a256;  
   	width: 30%;
   	height: 290px; 
-  	background: #9c5708;
+  	background: #e69f46;
   	padding: 20px;
 }
 
@@ -49,14 +61,14 @@ nav ul {
      margin: 0;
      padding: 0;
      width: 100%;
-     background: sandybrown; 
+     background: #80a256; 
 }
 
 nav li {
      position: relative;
      list-style: none;
      margin: 0;
-     border: 3px solid #9c5708;
+     border: 3px solid #e69f46;
 }
 
 nav ul ul {
@@ -74,7 +86,7 @@ nav li a {
 }
 
 nav li:hover {
-    background: snow;
+    background: #fee0ae;
 }
 
 nav li.submenu {
@@ -82,7 +94,7 @@ nav li.submenu {
 }
 
 nav li.submenu:hover {
-    background-color: snow;
+    background-color: #fee0ae;
 }
 
 nav ul.level1 li.submenu:hover ul.level2, nav ul.level2 li.submenu:hover ul.level3 {
@@ -93,7 +105,107 @@ article {
   float: left;
   padding: 50px;
   width: 70%;
-  background-color: #9c5708;
+  background-color: #991933;
+  height: 290px;
+}
+    
+<style>
+
+a {
+    color: #3a5946;
+}
+    
+a:visited {
+    color: #3a5946;
+}
+ 
+a:active {
+    color: #3a5946;
+}
+    
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}    
+    
+header {
+  font-family: "Bradley Hand", Cursive;
+  font-weight: bold;
+  color: #3a5946;
+  text-align: center;
+  background-color: #fee0ae;
+  padding: 20px;
+  text-align: center;
+  font-size: 40px;
+}
+    
+nav {
+    float: left;
+    font-size: 25px;
+    font-style: italic;
+    background: #80a256;  
+  	width: 30%;
+  	height: 290px; 
+  	background: #e69f46;
+  	padding: 20px;
+}
+
+nav ul {
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     background: #80a256; 
+}
+
+nav li {
+     position: relative;
+     list-style: none;
+     margin: 0;
+     border: 3px solid #e69f46;
+}
+
+nav ul ul {
+    position: absolute;
+    top: -3px;
+    left: 100%;
+    font-size: 25px;
+    display: none;
+}
+
+nav li a {
+    display: block;
+    padding: 0.25em 0 0.25em 0.5em;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background: #fee0ae;
+}
+
+nav li.submenu {
+    background: url(https://clholtz11.github.io/index.html) 95% 50% no-repeat;
+}
+
+nav li.submenu:hover {
+    background-color: #fee0ae;
+}
+
+nav ul.level1 li.submenu:hover ul.level2, nav ul.level2 li.submenu:hover ul.level3 {
+    display:block;
+}
+
+article {
+  float: left;
+  padding: 50px;
+  width: 70%;
+  background-color: #991933;
   height: 290px;
 }
     
@@ -122,7 +234,7 @@ section::after {
 footer {
   padding: 10px;
   text-align: center;
-  color: white;
+  color: #fee0ae;
 }
 
 @media (max-width: 600px) {
@@ -132,7 +244,28 @@ footer {
   }
 }
     
-</style>   
+</style> 
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  color: #fee0ae;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+    
+</style> 
 </head>    
 <body>
 <header>
