@@ -1,4 +1,5 @@
-Top Cast:  
+Top Cast:
+<div class="bullet-columns">
 * Lauren Graham: Lorelai Gilmore (154 episodes)
 * Alexis Bledel: Rory Gilmore (154 episodes)
 * Keiko Agena: Lane Kim / Lane Van Gerbig (154 episodes)
@@ -19,3 +20,4 @@ Top Cast:
 * Todd Lowe: Zack Van Gerbig (42 episodes)
 * Milo Ventimiglia: Jess Mariano (37 episodes)
 * David Sutcliffe: Christopher Hayden (37 episodes)
+</div>
