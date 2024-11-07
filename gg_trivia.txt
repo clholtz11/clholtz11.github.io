@@ -1,3 +1,4 @@
+<div class="preserve-line-breaks">
 Did You Know these interesting facts about Gilmore Girls?
 
 1. Scott Patterson, who plays Luke, was not hired initially as a series regular. He was only signed on for the pilot episode. Although it was only after discovering the undeniable chemistry between him and Lauren Graham that he was contracted for more episodes, and quickly became a series regular.
@@ -19,3 +20,4 @@ Did You Know these interesting facts about Gilmore Girls?
 9. In the show they mention Dirty Dancing (1987) several times. Kelly Bishop (Emily Gilmore) stars in the movie as Marjorie Houseman.
 
 10. In almost every episode, the episode title is said by one of the characters.
+</div>
