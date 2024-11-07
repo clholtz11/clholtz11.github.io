@@ -11,6 +11,10 @@
 </script>
 <style>
 
+.preserve-line-breaks {
+  white-space: pre-line;
+}
+
 a {
     color: #3a5946;
 }
@@ -26,6 +30,28 @@ a:active {
 * {
   box-sizing: border-box;
 }
+
+div {
+    text-align: center;
+}
+
+table, th, td {
+  border: 3px ridge;
+}
+
+table {
+  width: 90%;
+  color: #fee0ae;
+  text-align: center;
+  margin: auto;
+  color: #fee0ae;
+  font-size: 35px;
+  font-family: "Bradley Hand", Cursive;
+  cursor: pointer;
+}  
+
+th:hover {background-color: #fee0ae;}
+
 
 html, body {
   margin: 0;
@@ -105,24 +131,30 @@ article {
   float: left;
   padding: 50px;
   width: 70%;
-  background-color: #991933;
+  background-color: #e69f46;
   height: 290px;
 }
     
 h2 {
     font-family: Georgia, Serif;
     font-size: 65px;
+    color: #991933;
+    text-align: center;
+} 
+
+h3 {
+    font-family: Georgia, Serif;
+    font-size: 30px;
     color: #3a5946;
     text-align: center;
     margin: auto;
-} 
+}
 
 p {
     font-family: "Courier New", Monospace;
     font-size: 50px;
-    color: #80a256;
-    text-align: center; 
-    margin: auto;
+    color: #fee0ae;
+    text-align: center;   
 } 
 
 section::after {
