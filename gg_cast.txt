@@ -1,5 +1,5 @@
 Top Cast:
-<div class="bullet-columns">
+<div class="bullet-columns","preserve-line-breaks">
   <ul>
     <li>Lauren Graham: Lorelai Gilmore 
 (154 episodes)</li>
