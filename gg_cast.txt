@@ -1,25 +1,45 @@
 Top Cast:
 <div class="bullet-columns">
   <ul>
-    <li>Lauren Graham: Lorelai Gilmore (154 episodes)</li>
-    <li>Alexis Bledel: Rory Gilmore (154 episodes)</li>
-    <li>Keiko Agena: Lane Kim / Lane Van Gerbig (154 episodes)</li>
-    <li>Scott Patterson: Luke Danes (154 episodes)</li>
-    <li>Yanic Truesdale: Michel Gerard (154 episodes)</li>
-    <li>Kelly Bishop: Emily Gilmore (154 episodes)</li>
-    <li>Edward Herrmann: Richard Gilmore (154 episodes)</li>
-    <li>Melissa McCarthy: Sookie St. James (153 episodes)</li>
-    <li>Sean Gunn: Kirk Gleason / Kirk / Mick / Swan Man (137 episodes)</li>
-    <li>Liza Weil: Paris Geller (127 episodes)</li>
-    <li>Liz Torres: Miss Patty (79 episodes)</li>
-    <li>Jared Padalecki: Dean Forester (63 episodes)</li>
-    <li>Matt Czuchry: Logan Huntzberger (59 episodes)</li>
-    <li>Jackson Douglas: Jackson Belleville (57 episodes)</li>
-    <li>Michael Winters: Taylor Doose (53 episodes)</li>
-    <li>Sally Struthers: Babette Dell (52 episodes)</li>
-    <li>Emily Kuroda: Mrs. Kim (43 episodes)</li>
-    <li>Todd Lowe: Zack Van Gerbig (42 episodes)</li>
-    <li>Milo Ventimiglia: Jess Mariano (37 episodes)</li>
-    <li>David Sutcliffe: Christopher Hayden (37 episodes)</li>
+    <li>Lauren Graham: Lorelai Gilmore 
+(154 episodes)</li>
+    <li>Alexis Bledel: Rory Gilmore 
+(154 episodes)</li>
+    <li>Keiko Agena: Lane Kim / Lane Van Gerbig 
+(154 episodes)</li>
+    <li>Scott Patterson: Luke Danes 
+(154 episodes)</li>
+    <li>Yanic Truesdale: Michel Gerard 
+(154 episodes)</li>
+    <li>Kelly Bishop: Emily Gilmore 
+(154 episodes)</li>
+    <li>Edward Herrmann: Richard Gilmore 
+(154 episodes)</li>
+    <li>Melissa McCarthy: Sookie St. James 
+(153 episodes)</li>
+    <li>Sean Gunn: Kirk Gleason / Kirk / Mick / Swan Man 
+(137 episodes)</li>
+    <li>Liza Weil: Paris Geller 
+(127 episodes)</li>
+    <li>Liz Torres: Miss Patty 
+(79 episodes)</li>
+    <li>Jared Padalecki: Dean Forester 
+(63 episodes)</li>
+    <li>Matt Czuchry: Logan Huntzberger 
+(59 episodes)</li>
+    <li>Jackson Douglas: Jackson Belleville 
+(57 episodes)</li>
+    <li>Michael Winters: Taylor Doose 
+(53 episodes)</li>
+    <li>Sally Struthers: Babette Dell 
+(52 episodes)</li>
+    <li>Emily Kuroda: Mrs. Kim 
+(43 episodes)</li>
+    <li>Todd Lowe: Zack Van Gerbig 
+(42 episodes)</li>
+    <li>Milo Ventimiglia: Jess Mariano 
+(37 episodes)</li>
+    <li>David Sutcliffe: Christopher Hayden 
+(37 episodes)</li>
   </ul>
 </div>
