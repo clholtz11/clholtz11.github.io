@@ -254,6 +254,10 @@ function showInfo(title, file) {
       .catch(error => {
         infoBox.innerHTML = `<p>Error loading content: ${error.message}</p>`;
       });
+      .preserve-text {
+  white-space: pre; /* Preserves line breaks and white spaces */
+}
+
 }
 </script>
 
