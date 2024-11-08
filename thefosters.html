@@ -230,7 +230,48 @@ footer {
 </article>
 </section>
 <footer>
-   
+   <table>
+     <tr>
+        <th onclick="showInfo('Summary', 'tf_summary.txt')">Summary</th>
+        <th onclick="showInfo('Rating & Runtime', 'tf_raterun.txt')">Rating & Runtime</th>
+        <th onclick="showInfo('Main Cast & Crew', 'tf_cast.txt')">Main Cast</th>
+        <th onclick="showInfo('Trivia', 'tf_trivia.txt')">Trivia</th>
+        <th onclick="showInfo('Genre, Theme Song, etc.', 'tf_genrets.txt')">Genre, Theme Song, etc.</th>
+     </tr>
+   </table>
+   <div id="info-box">
+      
+      <hr>
+      <h3><strong>Click one of the rows to see more information about my #7 show: The Fosters!</strong></h3>
+      <hr>
+      <img src="https://deadline.com/wp-content/uploads/2018/01/fosters.jpg?w=681&h=383&crop=1" style="width: 30%;">
+   </div>
+
+   <script>
+function showInfo(title, file) {
+    const infoBox = document.getElementById('info-box');
+    infoBox.innerHTML = `<p>Loading ${title}...</p>`;
+    fetch(file)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`Could not load ${file}`);
+        }
+        return response.text(); 
+      })
+      .then(data => {
+        infoBox.innerHTML = `
+          <hr>
+          <h2 style="color: #59b69a">${title}</h2>
+          <hr>
+          <h3 style="width: 75%">${data}</h3>
+        `;
+      })
+      .catch(error => {
+        infoBox.innerHTML = `<p>Error loading content: ${error.message}</p>`;
+      });
+}
+</script>
+
 </footer>
 </body>
 </html>
