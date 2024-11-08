@@ -10,11 +10,47 @@
     }
 </script>
 <style>
+
+.preserve-line-breaks {
+  white-space: pre-line;
+}
+
+a {
+    color: #275b52;
+}
     
+a:visited {
+    color: #275b52;
+}
+ 
+a:active {
+    color: #275b52;
+}
+ 
 * {
   box-sizing: border-box;
 }
 
+div {
+    text-align: center;
+}
+
+table, th, td {
+  border: 3px ridge;
+}
+
+table {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  color: #275b52;
+  font-size: 35px;
+  font-family: "Bradley Hand", Cursive;
+  cursor: pointer;
+}  
+
+th:hover {background-color: #f2f3f8;}
+    
 html, body {
   margin: 0;
   margin-top: 20px;
@@ -22,13 +58,13 @@ html, body {
   width: 100%;
   height: 100%;
 }  
-    
+
 header {
   font-family: "Bradley Hand", Cursive;
   font-weight: bold;
-  color: #f05133;
+  color: #f2f3f8;
   text-align: center;
-  background-color: snow;
+  background-color: #59b69a;
   padding: 20px;
   text-align: center;
   font-size: 40px; 
@@ -38,10 +74,10 @@ nav {
     float: left;
     font-size: 25px;
     font-style: italic;
-    background: sandybrown;  
+    background: #80a256;  
   	width: 30%;
   	height: 290px; 
-  	background: #9c5708;
+  	background: #d23943;
   	padding: 20px;
 }
 
@@ -49,16 +85,16 @@ nav ul {
      margin: 0;
      padding: 0;
      width: 100%;
-     background: sandybrown; 
+     background: #f2f3f8; 
 }
 
 nav li {
      position: relative;
      list-style: none;
      margin: 0;
-     border: 3px solid #9c5708;
+     border: 3px solid #d23943;
 }
-    
+
 nav ul ul {
     position: absolute;
     top: -3px;
@@ -74,7 +110,7 @@ nav li a {
 }
 
 nav li:hover {
-    background: snow;
+    background: #59b69a;
 }
 
 nav li.submenu {
@@ -82,7 +118,7 @@ nav li.submenu {
 }
 
 nav li.submenu:hover {
-    background-color: snow;
+    background-color: #59b69a;
 }
 
 nav ul.level1 li.submenu:hover ul.level2, nav ul.level2 li.submenu:hover ul.level3 {
@@ -93,22 +129,30 @@ article {
   float: left;
   padding: 50px;
   width: 70%;
-  background-color: #9c5708;
+  background-color: #d23943;
   height: 290px;
 }
     
 h2 {
     font-family: Georgia, Serif;
     font-size: 65px;
-    color: snow;
+    color: #59b69a;
     text-align: center;
     margin: auto;
 } 
 
+h3 {
+    font-family: Georgia, Serif;
+    font-size: 30px;
+    color: #621621;
+    text-align: center;
+    margin: auto;
+}
+
 p {
     font-family: "Courier New", Monospace;
     font-size: 50px;
-    color: sandybrown;
+    color: #621621;
     text-align: center; 
     margin: auto;
 } 
@@ -122,7 +166,6 @@ section::after {
 footer {
   padding: 10px;
   text-align: center;
-  color: white;
 }
 
 @media (max-width: 600px) {
@@ -132,7 +175,7 @@ footer {
   }
 }
     
-</style>   
+</style>    
 </head>    
 <body>
 <header>
