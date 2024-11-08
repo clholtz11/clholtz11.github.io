@@ -230,7 +230,48 @@ footer {
 </article>
 </section>
 <footer>
-   
+   <table>
+     <tr>
+        <th onclick="showInfo('Summary', 'ouat_summary.txt')">Summary</th>
+        <th onclick="showInfo('Rating & Runtime', 'ouat_raterun.txt')">Rating & Runtime</th>
+        <th onclick="showInfo('Main Cast & Crew', 'ouat_cast.txt')">Main Cast</th>
+        <th onclick="showInfo('Trivia', 'ouat_trivia.txt')">Trivia</th>
+        <th onclick="showInfo('Genre, Theme Song, etc.', 'ouat_genrets.txt')">Genre, Theme Song, etc.</th>
+     </tr>
+   </table>
+   <div id="info-box">
+      
+      <hr>
+      <h3><strong>Click one of the rows to see more information about my #9 show: Once Upon A Time!</strong></h3>
+      <hr>
+      <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/09/once-upon-a-time.jpg" style="width: 30%;">
+   </div>
+
+   <script>
+function showInfo(title, file) {
+    const infoBox = document.getElementById('info-box');
+    infoBox.innerHTML = `<p>Loading ${title}...</p>`;
+    fetch(file)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`Could not load ${file}`);
+        }
+        return response.text(); 
+      })
+      .then(data => {
+        infoBox.innerHTML = `
+          <hr>
+          <h2 style="color: #59b69a">${title}</h2>
+          <hr>
+          <h3 style="width: 75%">${data}</h3>
+        `;
+      })
+      .catch(error => {
+        infoBox.innerHTML = `<p>Error loading content: ${error.message}</p>`;
+      });
+}
+</script>
+
 </footer>
 </body>
 </html>
