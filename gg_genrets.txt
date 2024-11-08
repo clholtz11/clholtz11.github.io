@@ -1,7 +1,9 @@
 <div class="preserve-line-breaks">
-Genres: Coming-of-Age, Teen Drama, <a href="genre-comedy.html">Comedy</a>, <a href="genre-drama.html">Drama</a>
+  Genres: Coming-of-Age, Teen Drama, 
+  <a href="genre-comedy.html">Comedy</a>, 
+  <a href="genre-drama.html">Drama</a>
 
-Theme Song: "Where You Lead": Carole King
+  Theme Song: "Where You Lead": Carole King
 
-Release Date: October 5, 2000
+  Release Date: October 5, 2000
 </div>
