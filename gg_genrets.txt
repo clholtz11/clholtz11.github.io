@@ -1,5 +1,5 @@
 <div class="preserve-line-breaks">
-Genres: Coming-of-Age, Teen Drama, Comedy, Drama
+Genres: Coming-of-Age, Teen Drama, <a href="genre-comedy.html">Comedy</a>, <a href="genre-drama.html">Drama</a>
 
 Theme Song: "Where You Lead": Carole King
 
