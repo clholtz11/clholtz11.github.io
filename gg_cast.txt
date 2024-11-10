@@ -1,7 +1,6 @@
 Top Cast:
 <div class="preserve-line-breaks">
-<ol>
-<li>Lauren Graham: Lorelai Gilmore (154 episodes)</li>
+<ol><li>Lauren Graham: Lorelai Gilmore (154 episodes)</li>
 <li>Alexis Bledel: Rory Gilmore (154 episodes)</li>
 <li>Keiko Agena: Lane Kim / Lane Van Gerbig (154 episodes)</li>
 <li>Scott Patterson: Luke Danes (154 episodes)</li>
@@ -20,6 +19,5 @@ Top Cast:
 <li>Emily Kuroda: Mrs. Kim (43 episodes)</li>
 <li>Todd Lowe: Zack Van Gerbig (42 episodes)</li>
 <li>Milo Ventimiglia: Jess Mariano (37 episodes)</li>
-<li>David Sutcliffe: Christopher Hayden (37 episodes)</li>
-</ol>
+<li>David Sutcliffe: Christopher Hayden (37 episodes)</li></ol>
 </div>
