@@ -1,54 +1,58 @@
 <!DOCTYPE html>
+<html
 <head>
-      <title>Edit</title>
-      
-   </head>
-   <body>
-<script>
-    var password = "clh";
-    (function passcodeprotect() {
-        var passcode = prompt("Enter PassCode");
-        while (passcode !== password) {
-            alert("Incorrect PassCode");
-            return passcodeprotect();
-        }
-    }());
-</script>
-<label for="redi">Red: </label>
-<input type="range" min=0 max=255 id="redi" onmousemove="changeColor ()" onmouseup="showValues ()" value="125" /> <span id="redv"></span><br>
-<label for="greeni">Green:</label>
-<input type="range" min=0 max=255 id="greeni" onmousemove="changeColor ()" onmouseup="showValues ()" value="125" /> <span id="greenv"></span><br>
-<label for="bluei">Blue:</label>
-<input type="range" min=0 max=255 id="bluei" onmousemove="changeColor ()" onmouseup="showValues ()" value="200" /> <span id="bluev"></span>
-<br>
-<script>
-    function changeColor() {
-        var red = document.querySelector("#redi").value;
-        var green = document.querySelector("#greeni").value;
-        var blue = document.querySelector("#bluei").value;
-        var colorStr = "rgb(" + red + "," + green + "," + blue + ")";
-        document.body.style.backgroundColor = colorStr;
-        localStorage.setItem("backgroundColor", colorStr);
-    }
-
-    function showValues() {
-        document.querySelector("#redv").innerHTML = document.querySelector("#redi").value;
-        document.querySelector("#greenv").innerHTML = document.querySelector("#greeni").value;
-        document.querySelector("#bluev").innerHTML = document.querySelector("#bluei").value;
-    }
-    window.onload = function() {
-          changeColor(); showValues(); 
-    }
-    window.onload = function() {
-        
-        if (localStorage.getItem("backgroundColor")) {
-            document.body.style.backgroundColor = localStorage.getItem("backgroundColor");
-        }
-
-        
-    }
-</script>
-
-            <a href="index.html">Home</a> 
-   </body>
+    <title>Edit</title>
+    <style>
+    	#color {
+            width: 100px;  
+            height: 35px;
+            border: 2px inset black;
+            cursor: pointer; 
+      }
+    	a {
+        font-size: 25px;
+        color: auto;
+      }
+      a:visited {
+        color: auto;
+      } 
+      a:active {
+        color: auto;
+      }
+      </style>
 </head>
+<body>
+      <script>
+      var password = "clh";
+      (function passcodeprotect() {
+          var passcode = prompt("Enter PassCode");
+          while (passcode !== password) {
+              alert("Incorrect PassCode");
+              return passcodeprotect();
+          }
+      }());
+      </script>
+	<h1 style = "color: auto; font-size: auto;">Change the background colors for every page inside of this website!</h1>
+      <input style="width: 50px" type="color" id="color" onchange="changeColor()">
+      <br>
+      <script>
+        function changeColor() {
+            var color = document.querySelector("#color").value;
+            document.body.style.backgroundColor = color; 
+            localStorage.setItem("backgroundColor", color);
+        }
+        function showValues() {
+            document.querySelector("#redv").innerHTML = document.querySelector("#redi").value;
+            document.querySelector("#greenv").innerHTML = document.querySelector("#greeni").value;
+            document.querySelector("#bluev").innerHTML = document.querySelector("#bluei").value;
+        }
+        window.onload = function() {
+            if (localStorage.getItem("backgroundColor")) {
+                document.body.style.backgroundColor = localStorage.getItem("backgroundColor");
+            }
+        }
+      </script>
+      <br>
+      <a href="index.html">Home</a> 
+</body>
+</html>
