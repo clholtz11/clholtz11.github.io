@@ -21,7 +21,7 @@ Top Cast:
 <li>Milo Ventimiglia: Jess Mariano (37 episodes)</li>
 <li>David Sutcliffe: Christopher Hayden (37 episodes)</li></ol>
 </div>
-Creater/Writter/Story/Teleplay:
+Created by:
 <div class="preserve-line-breaks">
 <ol><li>Amy Sherman-Palladino (154 episodes)</li></ol>
 </div>
