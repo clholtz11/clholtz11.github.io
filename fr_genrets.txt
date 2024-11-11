@@ -1,7 +1,9 @@
-Genres: Feel-Good Romance, Parody, Sitcom, Comedy, Romance
+<div class="preserve-line-breaks">
+Genres: Feel-Good Romance, Parody, Sitcom, <a href="genre-comedy.html">Comedy</a>, Romance
 
-Theme Song: "I'll Be There For You": The Rembrandts
+Theme Song: <a href="https://youtu.be/RIjTq_OdFvo?si=-CKUbMeBHi6-_CSK"target="_blank">"I'll Be There For You"</a>: The Rembrandts
 
 Release Date: September 22, 1994
 
-Streaming Platforms: Max
+Streaming Platforms: <a href="stream-max.html">Max</a>
+</div>
