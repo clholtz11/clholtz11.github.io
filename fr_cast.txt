@@ -1,14 +1,16 @@
-Jennifer Aniston: Rachel Green (235 episodes)
-Courtney Cox: Monica Geller / Monica Geller-Bing (235 episodes)
-Lisa Kudrow: Phoebe Buffay / Ursula Buffay (235 episodes)
-Matt Leblanc: Joey Tribbiani (235 episodes)
-Matthew Perry: Chandler Bing (235 episodes)
-David Schwimmer: Ross Geller / Russ (235 episodes)
-James Michael Tyler: Gunther (164 episodes)
-Elliott Gould: Jack Geller (22 episodes)
-Christina Pickles: Judy Geller (19 episodes)
-Maggie Wheeler: Janice (19 episodes)
-Paul Rudd: Mike Hannigan (16 episodes)
-Jane Sibbett: Carol / Carol Willick (15 episodes)
-Helen Baxendale: Emily Waltham (14 episodes)
-Jessica Hecht: Susan Bunch (13 episodes)
+<div class="preserve-line-breaks">
+<ol><li>Jennifer Aniston: Rachel Green (235 episodes)</li>
+<li>Courtney Cox: Monica Geller / Monica Geller-Bing (235 episodes)</li>
+<li>Lisa Kudrow: Phoebe Buffay / Ursula Buffay (235 episodes)</li>
+<li>Matt Leblanc: Joey Tribbiani (235 episodes)</li>
+<li>Matthew Perry: Chandler Bing (235 episodes)</li>
+<li>David Schwimmer: Ross Geller / Russ (235 episodes)</li>
+<li>James Michael Tyler: Gunther (164 episodes)</li>
+<li>Elliott Gould: Jack Geller (22 episodes)</li>
+<li>Christina Pickles: Judy Geller (19 episodes)</li>
+<li>Maggie Wheeler: Janice (19 episodes)</li>
+<li>Paul Rudd: Mike Hannigan (16 episodes)</li>
+<li>Jane Sibbett: Carol / Carol Willick (15 episodes)</li>
+<li>Helen Baxendale: Emily Waltham (14 episodes)</li>
+<li>Jessica Hecht: Susan Bunch (13 episodes)</li></ol>
+</div>
