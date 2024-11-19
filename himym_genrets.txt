@@ -1,0 +1,15 @@
+<div class="preserve-line-breaks">
+Genres: Romantic Comedy, Sitcom, <a href="genre-comedy.html">Comedy</a>, <a href="genre-drama.html">Drama</a>, Romance
+
+Theme Song: <a href="https://youtu.be/4s20kSU0mR0si=ZEOHjRpLzrJaT_BP"target="_blank">"Hey Beautiful"</a>: The Solids P.S.: this is the cast performing the theme song
+
+Release Date: September 19, 2005
+
+Streaming Platforms: <a href="stream-hulu.html">Hulu</a>, <a href="stream-netflix.html">Netflix</a>
+
+Average runtime per episode: 23 minutes
+
+Primary filming location: Los Angeles studio
+
+<a href="https://www.imdb.com/title/tt0460649/awards/?ref_=tt_awd"target="_blank">Awards:</a> 29 wins & 102 nominations
+</div>
