@@ -14,34 +14,16 @@
 
       if (spoiler.style.display === "none" || spoiler.style.display === "") {
          spoiler.style.display = "block";
-         button.textContent = "Hide Spoiler";
+         button.textContent = "Spoiler";
       } else {
          spoiler.style.display = "none";
-         button.textContent = "Show Spoiler";
+         button.textContent = "Spoiler";
       }
    }
 </script>
 <style>
 .spoiler {
          display: none;
-         background-color: #f9f9f9;
-         color: #59b69a;
-         border: 1px solid #ccc;
-         padding: 10px;
-         margin-top: 10px;
-         border-radius: 5px;
-}
-.button {
-         padding: 10px 15px;
-         background-color: #59b69a;
-         color: #f2f3f8;
-         border: none;
-         cursor: pointer;
-         border-radius: 5px;
-         font-size: 20px;
-}
-.button:hover {
-         background-color: #621621;
 }
 .preserve-line-breaks {
   white-space: pre-line;
