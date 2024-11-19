@@ -8,12 +8,21 @@
             document.body.style.backgroundColor = localStorage.getItem("backgroundColor");
         }
     }
+    function toggleSpoiler() {
+      const spoiler = document.getElementById("spoiler");
+      const button = document.querySelector(".button");
+
+      // Toggle the visibility of the spoiler
+      if (spoiler.style.display === "none" || spoiler.style.display === "") {
+         spoiler.style.display = "block";
+         button.textContent = "Hide Spoiler";
+      } else {
+         spoiler.style.display = "none";
+         button.textContent = "Show Spoiler";
+      }
+   }
 </script>
 <style>
-.spoiler {
-         display: none; /* Spoiler is hidden initially */
-}
-    
 .preserve-line-breaks {
   white-space: pre-line;
 }
