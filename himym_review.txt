@@ -1,0 +1,26 @@
+<div class="preserve-line-breaks">
+   Overall, I’ve given this show a perfect 10/10 rating on IMDb. I have always been a huge fan of the show in terms of the timeline. This is because they had so many subplots that made the show so enjoyable to watch. I love the episodes where it's just the 5 friends since it feels much more close and tight-knit. 
+
+   For the rest of the show, the process of Ted finding their mother got a little annoying at times. It was nothing the actor himself was doing wrong because he was playing the part extremely well. But I think that his character's personality was just a bit over the top at times. 
+</div>
+
+<button class="button" onclick="toggleSpoiler()">Show Spoiler</button>
+<div id="spoiler" class="spoiler">
+   However, if I were to rate this show solely based off the last couple of episodes of the series, I would change that rating to be much lower. I believe that they ended this show in a really awful way because they spent a build-up through the entire series to find the love of Ted's life, we met her in the last season, and then they killed her character off, and he ended right back up with the women from the beginning of the series, who did not want kids, but yet he did. This ruined the show for me and I feel as if there were many different directions they could have taken the show and yet they chose this path.
+</div>
+
+<script>
+   function toggleSpoiler() {
+      const spoiler = document.getElementById("spoiler");
+      const button = document.querySelector(".button");
+
+      // Toggle the visibility of the spoiler
+      if (spoiler.style.display === "none" || spoiler.style.display === "") {
+         spoiler.style.display = "block";
+         button.textContent = "Hide Spoiler";
+      } else {
+         spoiler.style.display = "none";
+         button.textContent = "Show Spoiler";
+      }
+   }
+</script>
