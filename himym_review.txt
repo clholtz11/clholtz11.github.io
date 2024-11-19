@@ -1,3 +1,29 @@
+<head>
+   <style>
+      .spoiler {
+         display: none; /* Spoiler is hidden initially */
+         background-color: #f9f9f9;
+         border: 1px solid #ccc;
+         padding: 10px;
+         margin-top: 10px;
+         border-radius: 5px;
+      }
+      .button {
+         padding: 10px 15px;
+         background-color: #007BFF;
+         color: white;
+         border: none;
+         cursor: pointer;
+         border-radius: 5px;
+         font-size: 14px;
+      }
+      .button:hover {
+         background-color: #0056b3;
+      }
+   </style>
+</head>
+<body>
+
 <div class="preserve-line-breaks">
    Overall, I’ve given this show a perfect 10/10 rating on IMDb. I have always been a huge fan of the show in terms of the timeline. This is because they had so many subplots that made the show so enjoyable to watch. I love the episodes where it's just the 5 friends since it feels much more close and tight-knit. 
 
