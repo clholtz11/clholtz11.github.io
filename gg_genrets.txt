@@ -7,5 +7,5 @@
 
   Streaming Platforms: <a href="stream-netflix.html">Netflix</a>
 
-  <a href="https://www.imdb.com/title/tt0238784/awards/?ref_=tt_awd">Awards:</a> 23 wins & 85 nominations
+  <a href="https://www.imdb.com/title/tt0238784/awards/?ref_=tt_awd"target="_blank">Awards:</a> 23 wins & 85 nominations
 </div>
