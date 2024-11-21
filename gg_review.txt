@@ -7,8 +7,8 @@ Initially, the show had a light-hearted vibe and a strong bond between mother an
 
 </div>
 
-<button onclick=“toggleSpoiler()” style=“margin-top: 10px; padding: 5px 10px;”>Spoiler</button>
-<div class=“preserve-line-breaks” id=“spoiler” style=“display: none; margin-top: 10px; padding: 10px; border: 1px solid #ccc; background-color: #f9f9f9;”>
+<button onclick="toggleSpoiler()" style="margin-top: 10px; padding: 5px 10px;">Spoiler</button>
+<div class="preserve-line-breaks" id="spoiler" style="display: none; margin-top: 10px; padding: 10px; border: 1px solid #ccc; background-color: #f9f9f9;">
 SPOILER!!
 
 If I were to break it down even more, I would have to say I particularly dislike when Lorelai and Christopher get together in the last season, end up getting married, and then divorce within a couple of months. This was absolutely ridiculous. Although many people have never been huge fans of Logan with Rory, I always felt like Dean was a crazy choice. It was when they slept together that the show began to decline more rapidly. 
