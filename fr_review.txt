@@ -1,0 +1,13 @@
+<div class="preserve-line-breaks">
+Overall, I’ve given this show a perfect 10/10 rating on IMDb. My love for this show has always been incredibly strong, primarily because of the dynamic and charisma shared by the six friends. While the obvious dynamics between Joey and Phoebe, and Chandler and Rachel, are captivating, I find the bonds between these friends to be the most wholesome and engaging aspect of the show. These relationships keep fans like me invested in the show’s journey.
+
+Another great feature of this show is its character development. In the early seasons, Rachel is portrayed as a spoiled rich girl who relies on her father’s money. However, towards the end of the show’s run, she undergoes significant growth and learns valuable life lessons, transforming into one of my favorite characters. Similarly, other characters also learn and grow, becoming stronger and more complex individuals.
+</div>
+
+
+<button onclick="toggleSpoiler()" style="margin-top: 10px; padding: 5px 10px;">Spoiler</button>
+<div class="preserve-line-breaks" id="spoiler" style="display: none; margin-top: 10px; padding: 10px; border: 1px solid #ccc; background-color: #f9f9f9;">
+SPOILER!!
+
+Monica and Chandler’s relationship was one of the best things to happen in the show. It was undoubtedly one of the most significant events, and it reflects the immense popularity of this outcome. While I wasn’t a huge fan of Joey never finding love like the other main cast members, I’m grateful that he was given the opportunity to move on with his two closest friends.
+</div>
