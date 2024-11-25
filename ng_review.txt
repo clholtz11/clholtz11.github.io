@@ -1,0 +1,14 @@
+<div class="preserve-line-breaks">
+Overall, I’ve given this show a 9/10 on IMDb. In my opinion, Jess (Zooey Deschanel) is the funniest cast member, and some of the best moments in the show come from Jess. However, all five main cast members have their own unique comedic styles that can make you laugh out loud. The humor in this show is a perfect blend of quirky and raunchy, which makes it a hilarious watch.
+
+When the show first started, I found it to be a bit slow and difficult to get into. However, after the first season ended, I became hooked and couldn’t stop watching it. 
+</div>
+
+<button onclick="toggleSpoiler()" style="margin-top: 10px; padding: 5px 10px;">Spoiler</button>
+<div class="preserve-line-breaks" id="spoiler" style="display: none; margin-top: 10px; padding: 10px; border: 1px solid #ccc; background-color: #f9f9f9;">
+SPOILER!!
+
+I wholeheartedly support the end-game relationships in this show. All the couples of the main cast were undoubtedly meant to be together, particularly Cece and Schmidt. In my opinion, they complement each other in a way that allows them to work effectively both emotionally and physically. I adore the relationship they’ve built over the seasons.
+
+One of my all-time favorite episodes in this show is season 2 episode 15: “The Cooler.” Not only is it one of the highest-rated New Girl episodes, but it also perfectly encapsulates the essence of the show. Moreover, the game they play, “True American,” is a perfect representation of the show’s humor and unpredictability—no one can figure out the rules or how to play it properly. 
+</div>

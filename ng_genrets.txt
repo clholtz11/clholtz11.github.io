@@ -1,0 +1,15 @@
+<div class="preserve-line-breaks">
+Genres: Feel-Good Romance, Quirky Comedy, Romantic Comedy, Sitcom, <a href="genre-comedy.html">Comedy</a>, Romance
+
+Theme Song: <a href="https://youtu.be/iWOLrZiuN7Y?si=6f2UJ7pokhfTXaW9"target="_blank">"Hey Girl"</a>: Zooey Deschanel
+
+Release Date: September 20, 2011
+
+Streaming Platforms: <a href="stream-hulu.html">Hulu</a>, Peacock
+
+Average runtime per episode: 22 minutes
+
+Primary filming location: Los Angeles, California
+
+<a href="https://www.imdb.com/title/tt1826940/awards/?ref_=tt_awd"target="_blank">Awards:</a> 11 wins & 85 nominations
+</div>

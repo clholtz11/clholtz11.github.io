@@ -1,0 +1,16 @@
+<div class="preserve-line-breaks">
+Overall, I've given this show a 9/10 rating on IMDb. It quickly became one of those shows that I fell in love with from the very beginning. I think this was because the storylines of the show were so relatable and the characters also had some of the best on screen dynamics of any shows I know.
+
+In the first few seasons of the show, during the High School years of their lives, the five friends relationships and friendships with one another stood as a testament to the beauty of the show. 
+
+In the later seasons (when they jump forward four years in season 5 and one year in season 7) the new characters that were introduced were hard to like at first since I was so used to and connected to the original cast. However, I eventually grew to like these characters and how they helped the character development of some of the original cast.
+</div>
+
+<button onclick="toggleSpoiler()" style="margin-top: 10px; padding: 5px 10px;">Spoiler</button>
+<div class="preserve-line-breaks" id="spoiler" style="display: none; margin-top: 10px; padding: 10px; border: 1px solid #ccc; background-color: #f9f9f9;">
+SPOILER!!
+
+In terms of certain characters of the show, I never was a fan of Dan Scott. He was a pure jerk to everyone he came across in the show, especially his own family (including the child he pretended didn't exist). The most confusing part of this all is that when they eventually killed him off after many near-death experiences, it was quite sad to see this happen. I think it was solely because Paul (who played Dan) did it so well that he made you become invested in his character. 
+
+Another thing that I wasn't a fan of was the back and forth drama between Lucas, Brooke, and Peyton. From the very beginning of the show, I knew who Lucas was going to end up with and all the drama they caused between eachother made him almost as bad as his birth father, which says a lot. 
+</div>

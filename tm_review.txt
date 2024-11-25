@@ -1,0 +1,12 @@
+<div class="preserve-line-breaks">
+Overall, I've given this show a 9/10 rating on IMDb. I don't really know how to explain it in words why I love this show that much, it is really just one of those shows that means a lot to me and that I would watch on repeat for hours and never stop laughing. 
+
+The family dynamic between the five of them makes it worth the watch, especially since they are always running around like crazy and trying so hard to just survive the day. It's the shows like these that make me realize the potential that sitcoms can have. 
+</div>
+
+<button onclick="toggleSpoiler()" style="margin-top: 10px; padding: 5px 10px;">Spoiler</button>
+<div class="preserve-line-breaks" id="spoiler" style="display: none; margin-top: 10px; padding: 10px; border: 1px solid #ccc; background-color: #f9f9f9;">
+SPOILER!!
+
+One of the biggest spoilers for this show is probably that their family dynamic gets worse over the seasons, but, as a family itself, I think the bond gets stronger between them as the show goes on. 
+</div>
