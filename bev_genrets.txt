@@ -1,0 +1,15 @@
+<div class="preserve-line-breaks">
+Genres: Teen Drama, Teen Romance, <a href="genre-drama.html">Drama</a>, Romance
+
+Theme Song: <a href="https://youtu.be/JDOrOMuo-9o?si=9CpiybV5Gbl2Zhec"target="_blank">"Beverly Hills, 90210"</a>: Intro
+
+Release Date: October 4, 1990
+
+Streaming Platforms: Paramount +, Pluto TV
+
+Average runtime per episode: 44 minutes
+
+Primary filming location: Altadena, California
+
+<a href="https://www.imdb.com/title/tt0098749/awards/?ref_=tt_awd"target="_blank">Awards:</a> 17 wins & 37 nominations
+</div>

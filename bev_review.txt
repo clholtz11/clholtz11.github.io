@@ -1,0 +1,14 @@
+<div class="preserve-line-breaks">
+Overall, I rated this show an 8/10 on IMDb. However, it was challenging to watch the entire series due to the removal of several episodes due to heavy and sensitive subject matter. The show follows the lives of high school students who grapple with alcohol, drug, sex, and violence while also trying to navigate their typical teenage experiences.
+
+As the series progresses into later seasons (after graduation), the characters face new challenges, including college life, balancing work, school, and personal responsibilities. 
+</div>
+
+<button onclick="toggleSpoiler()" style="margin-top: 10px; padding: 5px 10px;">Spoiler</button>
+<div class="preserve-line-breaks" id="spoiler" style="display: none; margin-top: 10px; padding: 10px; border: 1px solid #ccc; background-color: #f9f9f9;">
+SPOILER!!
+
+Although the show begins with most of the characters not being friends, they eventually develop a deep respect for one another and form an unbreakable bond. This bond is so strong that they all end up attending the same college in season 4.
+
+One of the biggest challenges the show faced was the tumultuous relationships between some of the couples. There was a love triangle involving Kelly, Brenda, and Dylan, as well as Donna and David’s complicated relationship. These issues created tension and made it difficult for the characters to form emotional connections with each other. However, despite these challenges, they managed to maintain their friendship and support one another through thick and thin.
+</div>

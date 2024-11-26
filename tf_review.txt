@@ -1,0 +1,14 @@
+<div class="preserve-line-breaks">
+Overall, I gave this show a 9/10 on IMDb. It was a perfect blend of wholesomeness, drama, and intensity. This show delves deeply into a specific topic, the foster system and foster care in general, so viewers must approach it with an open mind and heart.
+
+Personally, this show resonated with me because the characters faced relatable issues that were both challenging and emotionally impactful. It’s rare for me to shed tears while watching a show, but this one certainly did. 
+</div>
+
+<button onclick="toggleSpoiler()" style="margin-top: 10px; padding: 5px 10px;">Spoiler</button>
+<div class="preserve-line-breaks" id="spoiler" style="display: none; margin-top: 10px; padding: 10px; border: 1px solid #ccc; background-color: #f9f9f9;">
+SPOILER!!
+
+When Jude was adopted by the Adams Fosters at the end of season one, while Callie was not, I lost it. This was a pivotal moment in the show because Callie genuinely desired and needed this family. Although they eventually discovered her father’s identity (only a few episodes later), it took a while before she was adopted.
+
+One of the most challenging aspects for me to witness in this show was the dysfunctional relationship between Brandon and Callie. I believe this is because Callie yearned for a family, and Lena and Stef seemed like an ideal match for her until she became involved with their son, leading to complications. If this hadn’t occurred, I think the family dynamics would have been significantly stronger than they ultimately became. 
+</div>
