@@ -35,5 +35,4 @@ Enter a personalized review down below and it'll get saved directly to this page
                 entryList.appendChild(listItem);
             });
         };
-        <a href="gilmoregirls.html" style="margin-top: 10px; padding: 5px 10px; font-size: 30px;>Back</a>
     </script>
