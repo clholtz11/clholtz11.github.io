@@ -6,9 +6,9 @@
     <title>New Entry</title>
     <style>
         textarea {
-            width: 100%;
-            height: 150px;
-            font-size: 16px;
+            width: 100%; /* Full width */
+            height: 150px; /* Height for more space */
+            font-size: 16px; /* Comfortable font size */
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -47,12 +47,19 @@
                 // Save updated entries back to localStorage
                 localStorage.setItem('entries', JSON.stringify(entries));
 
-                // Redirect back to the main page
-                window.location.href = 'index.html';
+                // Debug logs
+                console.log('Entry saved:', entryInput);
+                console.log('All entries:', entries);
+
+                // Redirect back to the main page (adjust path if needed)
+                window.location.href = 'index.html'; // Change this if necessary
+            } else {
+                console.log('Empty input, not saved.');
             }
         });
     </script>
-    <a href="gilmoregirls.html" style="margin-top: 10px; padding: 5px 10px; font-size: 30px;">Back</a>
 
+    <!-- Back button -->
+    <a href="gilmoregirls.html" style="margin-top: 10px; padding: 5px 10px; font-size: 30px;">Back</a>
 </body>
 </html>
