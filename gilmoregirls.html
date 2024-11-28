@@ -264,7 +264,48 @@ footer {
         <th onclick="showInfo('Review', 'gg_review.txt')">Review</th>
      </tr>
    </table>
-   <div id="output">
+   <div id="info-box">
+      
+      <hr>
+      <h3><strong>Click one of the rows to see more information about my #2 show: Friends!</strong></h3>
+      <hr>
+      <img src="https://m.media-amazon.com/images/M/MV5BZGY5MTgwOGItN2Q5My00MWZhLTkzMWEtYzEzYTZkNjBmN2RiXkEyXkFqcGdeQXNvbG5vbXM@._V1_QL75_UX500_CR0,0,500,281_.jpg" style="width: 30%;">
+   </div>
+
+   <script>
+function showInfo(title, file) {
+    const infoBox = document.getElementById('info-box');
+    infoBox.innerHTML = `<p>Loading ${title}...</p>`;
+    fetch(file)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`Could not load ${file}`);
+        }
+        return response.text(); 
+      })
+      .then(data => {
+        infoBox.innerHTML = `
+          <hr>
+          <h2 style="color: #59b69a">${title}</h2>
+          <hr>
+          <h3 style="width: 75%">${data}</h3>
+        `;
+      })
+      .catch(error => {
+        infoBox.innerHTML = `<p>Error loading content: ${error.message}</p>`;
+      });
+}
+</script>
+
+<hr>
+<div class="preserve-line-breaks">
+<h2>Want to leave your own review?</h2>
+<h3>Enter a personalized review down below.
+It'll get saved directly to this page for everyone to see!</h3>
+</div>
+<button onclick="window.location.href='your-review.html'" style="margin-top: 10px; padding: 5px 10px; font-size: 30px;">Create New Entry</button>
+
+    <div id="output">
     <hr>
     <h2>Entries:</h2>
     <ol id="entryList" style="font-family: Georgia, Serif; font-size: 30px; color: #621621; text-align: center; margin: auto;"></ol>
@@ -296,36 +337,6 @@ footer {
         }
     });
 </script>
-
-<hr>
-<div class="preserve-line-breaks">
-<h2>Want to leave your own review?</h2>
-<h3>Enter a personalized review down below.
-It'll get saved directly to this page for everyone to see!</h3>
-</div>
-<button onclick="window.location.href='your-review.html'" style="margin-top: 10px; padding: 5px 10px; font-size: 30px;">Create New Entry</button>
-
-    <div id="output">
-        <hr>
-        <h2>Entries:</h2>
-        <ol id="entryList" style="font-family: Georgia, Serif; font-size: 30px; color: #621621; text-align: center; margin: auto;"></ol>
-    </div>
-
-    <script>
-        const form = document.getElementById('entryForm');
-
-        form.addEventListener('submit', function(event) {
-            event.preventDefault(); 
-            const entryInput = document.getElementById('entryInput').value;
-
-            if (entryInput.trim() !== "") {
-                const entries = JSON.parse(localStorage.getItem('entries')) || [];
-                entries.push(entryInput);
-                localStorage.setItem('entries', JSON.stringify(entries));
-                window.location.href = 'gilmoregirls.html';
-            }
-        });
-    </script>
 
 </footer>
 </body>
