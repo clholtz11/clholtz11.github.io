@@ -21,12 +21,25 @@
 <body>
     <h1>New Review Entry</h1>
     <form id="entryForm">
-        <label for="showInput">Enter the name of the show:</label><br>
-        <input type="text" id="showInput" required placeholder="Enter show name"><br>
-        <label for="entryInput">Enter your review of this show:</label><br>
-        <textarea id="entryInput" required></textarea><br>
-        <button type="submit">Submit</button>
-    </form>
+    <label for="showName">Select Show:</label>
+    <select id="showName" required>
+        <option value="Gilmore Girls">Gilmore Girls</option>
+        <option value="Friends">Friends</option>
+        <option value="How I Met Your Mother">How I Met Your Mother</option>
+        <option value="One Tree Hill">How I Met Your Mother</option>
+        <option value="The Middle">How I Met Your Mother</option>
+        <option value="New Girl">How I Met Your Mother</option>
+        <option value="The Fosters">How I Met Your Mother</option>
+        <option value="Beverly Hills, 90210">How I Met Your Mother</option>
+        <option value="Once Upon A Time">How I Met Your Mother</option>
+        <option value="Heartland">How I Met Your Mother</option>
+    </select><br>
+
+    <label for="entryInput">Enter your review:</label><br>
+    <textarea id="entryInput" required></textarea><br>
+    <button type="submit">Submit</button>
+</form>
+
 
     <button id="clearEntries" style="margin-top: 10px;">Clear All Reviews</button>
 
