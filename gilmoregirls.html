@@ -4,21 +4,24 @@
 <title>Show & Share Homepage</title>  
 <script>
     window.onload = function() {
+        // Load background color if previously saved
         if (localStorage.getItem("backgroundColor")) {
             document.body.style.backgroundColor = localStorage.getItem("backgroundColor");
         }
-        const showName = "Gilmore Girls";  // This should be dynamic based on the page
-    const reviews = JSON.parse(localStorage.getItem(showName)) || [];
 
-    const reviewList = document.getElementById('reviewList');
-    reviewList.innerHTML = '';
+        // Load reviews for Gilmore Girls (or dynamic show based on page)
+        const showName = "Gilmore Girls";  // You can update this dynamically based on the page
+        const reviews = JSON.parse(localStorage.getItem(showName)) || [];
+        
+        const reviewList = document.getElementById('reviewList');
+        reviewList.innerHTML = '';
 
-    reviews.forEach(entry => {
-        const li = document.createElement('li');
-        li.textContent = entry;
-        reviewList.appendChild(li);
-    });
-    }
+        reviews.forEach(entry => {
+            const li = document.createElement('li');
+            li.textContent = entry;
+            reviewList.appendChild(li);
+        });
+    };
 
     function toggleSpoiler() {
       const spoiler = document.getElementById("spoiler");
@@ -275,74 +278,61 @@ footer {
       <img src="https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQS9vrxnDv94S7MlAI-VMEtjSFNPwsvfUOJyXbpdccmDksqngsHPnNPDACKLPvSEWr_9IwXA96JC5p_PBnkoOWCd4TWVBPCHxVjUYA4TntqG1JC8K5B7RaSt0rA0XTRZhFK1xQQ_47is5_9Pc-J4XI-dtC4A.jpg?r=29d" style="width: 30%;">
    </div>
 
-   <script>
-function showInfo(title, file) {
-    const infoBox = document.getElementById('info-box');
-    infoBox.innerHTML = `<p>Loading ${title}...</p>`;
-    fetch(file)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`Could not load ${file}`);
+  <script>
+        function showInfo(title, file) {
+            const infoBox = document.getElementById('info-box');
+            infoBox.innerHTML = `<p>Loading ${title}...</p>`;
+            fetch(file)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Could not load ${file}`);
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    infoBox.innerHTML = `
+                        <hr>
+                        <h2 style="color: #59b69a">${title}</h2>
+                        <hr>
+                        <h3 style="width: 75%">${data}</h3>
+                    `;
+                })
+                .catch(error => {
+                    infoBox.innerHTML = `<p>Error loading content: ${error.message}</p>`;
+                });
         }
-        return response.text(); 
-      })
-      .then(data => {
-        infoBox.innerHTML = `
-          <hr>
-          <h2 style="color: #59b69a">${title}</h2>
-          <hr>
-          <h3 style="width: 75%">${data}</h3>
-        `;
-      })
-      .catch(error => {
-        infoBox.innerHTML = `<p>Error loading content: ${error.message}</p>`;
-      });
-}
-</script>
-
+    </script>
 <hr>
-<div class="preserve-line-breaks">
-<h2>Want to leave your own review?</h2>
-<h3>Enter a personalized review down below.
-It'll get saved directly to this page for everyone to see!</h3>
-</div>
-<button onclick="window.location.href='your-review.html'" style="margin-top: 10px; padding: 5px 10px; font-size: 30px;">Create New Entry</button>
+    <div class="preserve-line-breaks">
+        <h2>Want to leave your own review?</h2>
+        <h3>Enter a personalized review down below.
+        It'll get saved directly to this page for everyone to see!</h3>
+    </div>
+    <button onclick="window.location.href='your-review.html'" style="margin-top: 10px; padding: 5px 10px; font-size: 30px;">Create New Entry</button>
 
     <div id="output">
-    <hr>
-    <h2>Entries:</h2>
-    <ol id="reviewList" style="font-family: Georgia, Serif; font-size: 30px; color: #621621; text-align: center; margin: auto;"></ol>
-</div>
+        <hr>
+        <h2>Entries:</h2>
+        <ol id="reviewList" style="font-family: Georgia, Serif; font-size: 30px; color: #621621; text-align: center; margin: auto;"></ol>
+    </div>
 
 <script>
-    window.onload = function() {
-    const showName = localStorage.getItem('currentShow');  // Get the show name stored when the user selected a show
-    const entries = JSON.parse(localStorage.getItem(showName)) || [];
-    const entryList = document.getElementById('entryList');
-    entryList.innerHTML = ''; 
-    entries.forEach(entry => {
-        const li = document.createElement('li');
-        li.textContent = entry;
-        entryList.appendChild(li);
-    });
-};
-
-const form = document.getElementById('entryForm');
-
-form.addEventListener('submit', function(event) {
-    event.preventDefault(); 
-    const entryInput = document.getElementById('entryInput').value;
-    const showName = localStorage.getItem('currentShow');  // Ensure the review is linked to the right show
-
-    if (entryInput.trim() !== "") {
-        const entries = JSON.parse(localStorage.getItem(showName)) || [];
-        entries.push(entryInput);
-        localStorage.setItem(showName, JSON.stringify(entries));
-        window.location.href = `${showName.toLowerCase().replace(/\s/g, '')}.html`; // Redirect back to the show-specific page
-    }
-});
-
-</script>
+        // Function to handle form submission and saving reviews to localStorage
+        const form = document.getElementById('entryForm');
+        
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const entryInput = document.getElementById('entryInput').value;
+            const showName = "Gilmore Girls"; // Ensure this is dynamic for each show
+            
+            if (entryInput.trim() !== "") {
+                const entries = JSON.parse(localStorage.getItem(showName)) || [];
+                entries.push(entryInput);
+                localStorage.setItem(showName, JSON.stringify(entries));
+                window.location.href = `${showName.toLowerCase().replace(/\s/g, '')}.html`; // Redirect back to the show-specific page
+            }
+        });
+    </script>
 
 </footer>
 </body>
