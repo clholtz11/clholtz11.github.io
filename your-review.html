@@ -30,28 +30,31 @@
 
     <script>
     document.getElementById('entryForm').addEventListener('submit', function(event) {
-    event.preventDefault(); 
-    const entryInput = document.getElementById('entryInput').value;
-    
-    if (entryInput.trim() !== "") {
-        // Get the current page's name from the URL
-        const currentPage = window.location.pathname.split('/').pop().replace('.html', '');
+        event.preventDefault(); 
+        const entryInput = document.getElementById('entryInput').value;
+        
+        if (entryInput.trim() !== "") {
+            // Get the current page's name from the URL (excluding the file extension)
+            const currentPage = window.location.pathname.split('/').pop().replace('.html', '');
 
-        // Retrieve existing entries for the current page
-        const entries = JSON.parse(localStorage.getItem(currentPage)) || [];
-        entries.push(entryInput);
+            // Retrieve existing entries for the current page
+            const entries = JSON.parse(localStorage.getItem(currentPage)) || [];
+            entries.push(entryInput);
 
-        // Save entries to localStorage under the current page's key
-        localStorage.setItem(currentPage, JSON.stringify(entries));
+            // Save entries to localStorage under the current page's key
+            localStorage.setItem(currentPage, JSON.stringify(entries));
 
-        // Redirect or refresh as needed
-        window.location.href = currentPage + '.html';
-    }
-});
-
+            // Redirect back to the current page
+            window.location.href = currentPage + '.html';
+        }
+    });
 
     document.getElementById('clearEntries').addEventListener('click', function() {
-        localStorage.removeItem('entries');  
+        // Get the current page's name
+        const currentPage = window.location.pathname.split('/').pop().replace('.html', '');
+
+        // Remove entries for the current page
+        localStorage.removeItem(currentPage);  
         alert('All entries have been cleared!'); 
         window.location.reload(); 
     });
