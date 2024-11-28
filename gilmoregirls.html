@@ -3,24 +3,23 @@
 <head>
 <title>Show & Share Homepage</title>  
 <script>
-    // Display saved entries on page load
-window.onload = function() {
+    window.onload = function() {
+    // Load saved entries from localStorage and display
     const entries = JSON.parse(localStorage.getItem('entries')) || [];
     const entryList = document.getElementById('entryList');
     entryList.innerHTML = ''; // Clear any existing list
-
     entries.forEach(entry => {
         const li = document.createElement('li');
         li.textContent = entry;
         entryList.appendChild(li);
     });
+
+    // Load background color if saved
+    if (localStorage.getItem("backgroundColor")) {
+        document.body.style.backgroundColor = localStorage.getItem("backgroundColor");
+    }
 };
 
-    window.onload = function() {
-        if (localStorage.getItem("backgroundColor")) {
-            document.body.style.backgroundColor = localStorage.getItem("backgroundColor");
-        }
-    }
     function toggleSpoiler() {
       const spoiler = document.getElementById("spoiler");
       const button = document.querySelector(".button");
