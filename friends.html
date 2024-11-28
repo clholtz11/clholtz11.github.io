@@ -18,7 +18,7 @@
 
         reviews.forEach(entry => {
             const li = document.createElement('li');
-            li.textContent = entry;
+            li.innerHTML = `<strong>Reviewed by ${entry.name}:</strong> ${entry.review}`;
             reviewList.appendChild(li);
         });
     };
