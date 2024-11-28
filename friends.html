@@ -4,18 +4,24 @@
 <title>Show & Share Homepage</title>  
 <script> 
    window.onload = function() {
-    const entries = JSON.parse(localStorage.getItem('entries')) || [];
-    const entryList = document.getElementById('entryList');
-    entryList.innerHTML = ''; 
-    entries.forEach(entry => {
-        const li = document.createElement('li');
-        li.textContent = entry;
-        entryList.appendChild(li);
-    });
-    if (localStorage.getItem("backgroundColor")) {
-        document.body.style.backgroundColor = localStorage.getItem("backgroundColor");
-    }
-};
+        // Load background color if previously saved
+        if (localStorage.getItem("backgroundColor")) {
+            document.body.style.backgroundColor = localStorage.getItem("backgroundColor");
+        }
+
+        // Load reviews for Gilmore Girls (or dynamic show based on page)
+        const showName = "Friends";  // You can update this dynamically based on the page
+        const reviews = JSON.parse(localStorage.getItem(showName)) || [];
+        
+        const reviewList = document.getElementById('reviewList');
+        reviewList.innerHTML = '';
+
+        reviews.forEach(entry => {
+            const li = document.createElement('li');
+            li.textContent = entry;
+            reviewList.appendChild(li);
+        });
+    };
     function toggleSpoiler() {
       const spoiler = document.getElementById("spoiler");
       const button = document.querySelector(".button");
