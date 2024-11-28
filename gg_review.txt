@@ -27,34 +27,25 @@ It'll get saved directly to this page for everyone to see!
     </div>
 
     <script>
-    const form = document.getElementById('entryForm');
+        const form = document.getElementById('entryForm');
 
-    form.addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent the page refresh
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent page refresh
 
-        const entryInput = document.getElementById('entryInput').value;
+            const entryInput = document.getElementById('entryInput').value;
 
-        if (entryInput.trim() !== "") {
-            // Send the entry to the server using fetch
-            fetch('/save-entry', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ entry: entryInput }),
-            })
-            .then(response => response.text())
-            .then(data => {
-                console.log(data); // Server response
-                // Redirect to main page after saving
+            if (entryInput.trim() !== "") {
+                // Retrieve existing entries from localStorage
+                const entries = JSON.parse(localStorage.getItem('entries')) || [];
+                
+                // Add new entry to the list
+                entries.push(entryInput);
+                
+                // Save updated entries back to localStorage
+                localStorage.setItem('entries', JSON.stringify(entries));
+
+                // Redirect back to the main page
                 window.location.href = 'index.html';
-            })
-            .catch(error => {
-                console.error('Error saving entry:', error);
-            });
-        } else {
-            console.log('Empty input, not saved.');
-        }
-    });
-</script>
-
+            }
+        });
+    </script>
