@@ -20,48 +20,34 @@
 </head>
 <body>
     <h1>New Review Entry</h1>
-    <form id="entryForm">
-        <label for="entryInput">Enter your review of this show:</label><br>
-        <textarea id="entryInput" required></textarea><br>
-        <button type="submit">Submit</button>
-    </form>
+<form id="entryForm">
+    <label for="entryInput">Enter your review of this show:</label><br>
+    <textarea id="entryInput" required></textarea><br>
+    <button type="submit">Submit</button>
+</form>
 
-    <button id="clearEntries" style="margin-top: 10px; padding: 10px 20px; font-size: 16px;">Clear All Reviews</button>
+<button id="clearEntries" style="margin-top: 10px; padding: 10px 20px; font-size: 16px;">Clear All Reviews</button>
 
-    <script>
-        // Save the current page as the last visited page
-        localStorage.setItem('lastPage', window.location.pathname);
+<script>
+    document.getElementById('entryForm').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        const entryInput = document.getElementById('entryInput').value;
+        
+        if (entryInput.trim() !== "") {
+            const entries = JSON.parse(localStorage.getItem('entries')) || [];
+            entries.push(entryInput);
+            localStorage.setItem('entries', JSON.stringify(entries));
+            window.location.href = 'gilmoregirls.html'; // Redirect back to the page
+        }
+    });
 
-        document.getElementById('entryForm').addEventListener('submit', function(event) {
-            event.preventDefault(); 
-            const entryInput = document.getElementById('entryInput').value;
-            
-            if (entryInput.trim() !== "") {
-                // Retrieve the last visited page from localStorage
-                const lastPage = localStorage.getItem('lastPage').split('/').pop().replace('.html', '');
-                
-                // Retrieve existing entries for the last visited page
-                const entries = JSON.parse(localStorage.getItem(lastPage)) || [];
-                entries.push(entryInput);
+    document.getElementById('clearEntries').addEventListener('click', function() {
+        localStorage.removeItem('entries');  
+        alert('All entries have been cleared!'); 
+        window.location.reload(); 
+    });
+</script>
 
-                // Save entries under the last visited page
-                localStorage.setItem(lastPage, JSON.stringify(entries));
-
-                // Redirect back to the same page
-                window.location.href = lastPage + '.html';
-            }
-        });
-
-        document.getElementById('clearEntries').addEventListener('click', function() {
-            // Retrieve the last visited page from localStorage
-            const lastPage = localStorage.getItem('lastPage').split('/').pop().replace('.html', '');
-
-            // Remove entries for the last visited page
-            localStorage.removeItem(lastPage);  
-            alert('All entries have been cleared!'); 
-            window.location.reload(); 
-        });
-    </script>
     <a href="index.html">Home</a>
 </body>
 </html>
