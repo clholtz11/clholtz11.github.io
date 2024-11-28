@@ -52,15 +52,17 @@
     <script>
         document.getElementById('entryForm').addEventListener('submit', function(event) {
     event.preventDefault();
+    const name = document.getElementById('nameInput').value;
     const showName = document.getElementById('showName').value;
-    const entryInput = document.getElementById('entryInput').value;
+    const review = document.getElementById('entryInput').value;
 
-    if (entryInput.trim() !== "") {
+    if (name.trim() !== "" && review.trim() !== "") {
+        const reviewData = { name: name, review: review };
         const reviews = JSON.parse(localStorage.getItem(showName)) || [];
-        reviews.push(entryInput);
+        reviews.push(reviewData);
         localStorage.setItem(showName, JSON.stringify(reviews));
         alert('Review saved!');
-        window.location.href = `index.html`;  // Redirect to the home page
+        window.location.href = `${showName.toLowerCase().replace(/\s/g, '')}.html`;
     }
 });
 
