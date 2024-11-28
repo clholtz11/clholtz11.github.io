@@ -3,6 +3,19 @@
 <head>
 <title>Show & Share Homepage</title>  
 <script>
+    // Display saved entries on page load
+window.onload = function() {
+    const entries = JSON.parse(localStorage.getItem('entries')) || [];
+    const entryList = document.getElementById('entryList');
+    entryList.innerHTML = ''; // Clear any existing list
+
+    entries.forEach(entry => {
+        const li = document.createElement('li');
+        li.textContent = entry;
+        entryList.appendChild(li);
+    });
+};
+
     window.onload = function() {
         if (localStorage.getItem("backgroundColor")) {
             document.body.style.backgroundColor = localStorage.getItem("backgroundColor");
