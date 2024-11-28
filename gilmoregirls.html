@@ -4,17 +4,20 @@
 <title>Show & Share Homepage</title>  
 <script>
     window.onload = function() {
-        const showName = "Gilmore Girls";  // This should match the show name from the input
-        const reviews = JSON.parse(localStorage.getItem(showName)) || [];
+        if (localStorage.getItem("backgroundColor")) {
+            document.body.style.backgroundColor = localStorage.getItem("backgroundColor");
+        }
+        const showName = "Gilmore Girls";  // This should be dynamic based on the page
+    const reviews = JSON.parse(localStorage.getItem(showName)) || [];
 
-        const reviewList = document.getElementById('reviewList');
-        reviewList.innerHTML = '';  // Clear any existing content
+    const reviewList = document.getElementById('reviewList');
+    reviewList.innerHTML = '';
 
-        reviews.forEach(entry => {
-            const li = document.createElement('li');
-            li.textContent = `${entry.review}`;
-            reviewList.appendChild(li);
-        });
+    reviews.forEach(entry => {
+        const li = document.createElement('li');
+        li.textContent = entry;
+        reviewList.appendChild(li);
+    });
     }
 
     function toggleSpoiler() {
