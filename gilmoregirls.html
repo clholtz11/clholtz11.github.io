@@ -316,29 +316,32 @@ It'll get saved directly to this page for everyone to see!</h3>
 
 <script>
     window.onload = function() {
-        const entries = JSON.parse(localStorage.getItem('entries')) || [];
-        const entryList = document.getElementById('entryList');
-        entryList.innerHTML = ''; 
-        entries.forEach(entry => {
-            const li = document.createElement('li');
-            li.textContent = entry;
-            entryList.appendChild(li);
-        });
-    };
-
-    const form = document.getElementById('entryForm');
-
-    form.addEventListener('submit', function(event) {
-        event.preventDefault(); 
-        const entryInput = document.getElementById('entryInput').value;
-
-        if (entryInput.trim() !== "") {
-            const entries = JSON.parse(localStorage.getItem('entries')) || [];
-            entries.push(entryInput);
-            localStorage.setItem('entries', JSON.stringify(entries));
-            window.location.href = 'gilmoregirls.html'; // Redirect back to the page
-        }
+    const showName = localStorage.getItem('currentShow');  // Get the show name stored when the user selected a show
+    const entries = JSON.parse(localStorage.getItem(showName)) || [];
+    const entryList = document.getElementById('entryList');
+    entryList.innerHTML = ''; 
+    entries.forEach(entry => {
+        const li = document.createElement('li');
+        li.textContent = entry;
+        entryList.appendChild(li);
     });
+};
+
+const form = document.getElementById('entryForm');
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    const entryInput = document.getElementById('entryInput').value;
+    const showName = localStorage.getItem('currentShow');  // Ensure the review is linked to the right show
+
+    if (entryInput.trim() !== "") {
+        const entries = JSON.parse(localStorage.getItem(showName)) || [];
+        entries.push(entryInput);
+        localStorage.setItem(showName, JSON.stringify(entries));
+        window.location.href = `${showName.toLowerCase().replace(/\s/g, '')}.html`; // Redirect back to the show-specific page
+    }
+});
+
 </script>
 
 </footer>
