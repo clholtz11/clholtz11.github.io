@@ -23,6 +23,7 @@
     <form id="entryForm">
     <label for="showName">Select Show:</label>
     <select id="showName" required>
+        <option value="" disabled selected>Select a Show</option>
         <option value="Gilmore Girls">Gilmore Girls</option>
         <option value="Friends">Friends</option>
         <option value="How I Met Your Mother">How I Met Your Mother</option>
@@ -54,7 +55,7 @@
         reviews.push(entryInput);
         localStorage.setItem(showName, JSON.stringify(reviews));
         alert('Review saved!');
-        window.location.href = `${showName}.html`;  // Redirect to the show page
+        window.location.href = `index.html`;  // Redirect to the home page
     }
 });
 
