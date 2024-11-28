@@ -4,10 +4,18 @@
 <title>Show & Share Homepage</title>  
 <script> 
     window.onload = function() {
-        if (localStorage.getItem("backgroundColor")) {
-            document.body.style.backgroundColor = localStorage.getItem("backgroundColor");
-        }
+    const entries = JSON.parse(localStorage.getItem('entries')) || [];
+    const entryList = document.getElementById('entryList');
+    entryList.innerHTML = ''; 
+    entries.forEach(entry => {
+        const li = document.createElement('li');
+        li.textContent = entry;
+        entryList.appendChild(li);
+    });
+    if (localStorage.getItem("backgroundColor")) {
+        document.body.style.backgroundColor = localStorage.getItem("backgroundColor");
     }
+};
     function toggleSpoiler() {
       const spoiler = document.getElementById("spoiler");
       const button = document.querySelector(".button");
@@ -286,7 +294,35 @@ function showInfo(title, file) {
       });
 }
 </script>
+<hr>
+<div class="preserve-line-breaks">
+<h2>Want to leave your own review?</h2>
+<h3>Enter a personalized review down below.
+It'll get saved directly to this page for everyone to see!</h3>
+</div>
+<button onclick="window.location.href='your-review.html'" style="margin-top: 10px; padding: 5px 10px; font-size: 30px;">Create New Entry</button>
 
+    <div id="output">
+        <hr>
+        <h2>Entries:</h2>
+        <ol id="entryList" style="font-family: Georgia, Serif; font-size: 30px; color: #621621; text-align: center; margin: auto;"></ol>
+    </div>
+
+    <script>
+        const form = document.getElementById('entryForm');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            const entryInput = document.getElementById('entryInput').value;
+
+            if (entryInput.trim() !== "") {
+                const entries = JSON.parse(localStorage.getItem('entries')) || [];
+                entries.push(entryInput);
+                localStorage.setItem('entries', JSON.stringify(entries));
+                window.location.href = 'friends.html';
+            }
+        });
+    </script>
 </footer>
 </body>
 </html>
