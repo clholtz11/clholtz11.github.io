@@ -4,18 +4,18 @@
 <title>Show & Share Homepage</title>  
 <script>
     window.onload = function() {
-    const entries = JSON.parse(localStorage.getItem('entries')) || [];
-    const entryList = document.getElementById('entryList');
-    entryList.innerHTML = ''; 
-    entries.forEach(entry => {
-        const li = document.createElement('li');
-        li.textContent = entry;
-        entryList.appendChild(li);
-    });
-    if (localStorage.getItem("backgroundColor")) {
-        document.body.style.backgroundColor = localStorage.getItem("backgroundColor");
+        const showName = "Gilmore Girls";  // This should match the show name from the input
+        const reviews = JSON.parse(localStorage.getItem(showName)) || [];
+
+        const reviewList = document.getElementById('reviewList');
+        reviewList.innerHTML = '';  // Clear any existing content
+
+        reviews.forEach(entry => {
+            const li = document.createElement('li');
+            li.textContent = `${entry.review}`;
+            reviewList.appendChild(li);
+        });
     }
-};
 
     function toggleSpoiler() {
       const spoiler = document.getElementById("spoiler");
@@ -303,12 +303,12 @@ function showInfo(title, file) {
 <h3>Enter a personalized review down below.
 It'll get saved directly to this page for everyone to see!</h3>
 </div>
-<button onclick="window.location.href='gg_your-review.html'" style="margin-top: 10px; padding: 5px 10px; font-size: 30px;">Create New Entry</button>
+<button onclick="window.location.href='your-review.html'" style="margin-top: 10px; padding: 5px 10px; font-size: 30px;">Create New Entry</button>
 
     <div id="output">
     <hr>
     <h2>Entries:</h2>
-    <ol id="entryList" style="font-family: Georgia, Serif; font-size: 30px; color: #621621; text-align: center; margin: auto;"></ol>
+    <ol id="reviewList" style="font-family: Georgia, Serif; font-size: 30px; color: #621621; text-align: center; margin: auto;"></ol>
 </div>
 
 <script>
