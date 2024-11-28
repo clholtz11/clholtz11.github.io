@@ -1,9 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Entry</title>
+    <title>New Review</title>
     <style>
         textarea {
             width: 100%;
@@ -24,40 +21,31 @@
 <body>
     <h1>New Review Entry</h1>
     <form id="entryForm">
-        <label for="entryInput">Enter your review:</label><br>
+        <label for="entryInput">Enter your review of this show:</label><br>
         <textarea id="entryInput" required></textarea><br>
         <button type="submit">Submit</button>
     </form>
 
-    <button id="clearEntries" style="margin-top: 10px; padding: 10px 20px; font-size: 16px;">Clear All Entries</button>
+    <button id="clearEntries" style="margin-top: 10px; padding: 10px 20px; font-size: 16px;">Clear All Reviews</button>
 
     <script>
-    // Submit new review
     document.getElementById('entryForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent page refresh
+        event.preventDefault(); 
         const entryInput = document.getElementById('entryInput').value;
-
         if (entryInput.trim() !== "") {
-            // Retrieve existing entries from localStorage
             const entries = JSON.parse(localStorage.getItem('entries')) || [];
-            
-            // Add new entry to the list
             entries.push(entryInput);
-            
-            // Save updated entries back to localStorage
             localStorage.setItem('entries', JSON.stringify(entries));
-
-            // Redirect to the main page after saving
             window.location.href = 'gilmoregirls.html';
         }
     });
 
-    // Clear all entries in localStorage
     document.getElementById('clearEntries').addEventListener('click', function() {
-        localStorage.removeItem('entries');  // Clear all stored entries
-        alert('All entries have been cleared!'); // Optional confirmation
-        window.location.reload();  // Reload page to reflect the changes
+        localStorage.removeItem('entries');  
+        alert('All entries have been cleared!'); 
+        window.location.reload(); 
     });
     </script>
+    <a href="index.html">Home</a>
 </body>
 </html>
