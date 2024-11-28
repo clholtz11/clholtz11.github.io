@@ -45,22 +45,18 @@
 
     <script>
         document.getElementById('entryForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            
-            const showInput = document.getElementById('showInput').value.trim();
-            const entryInput = document.getElementById('entryInput').value.trim();
-            
-            if (showInput !== "" && entryInput !== "") {
-                // Create an entry object to store the review
-                const entry = { review: entryInput, show: showInput };
-                const showReviews = JSON.parse(localStorage.getItem(showInput)) || [];
-                showReviews.push(entry);
-                localStorage.setItem(showInput, JSON.stringify(showReviews));
+    event.preventDefault();
+    const showName = document.getElementById('showName').value;
+    const entryInput = document.getElementById('entryInput').value;
 
-                alert('Review submitted for ' + showInput);
-                window.location.href = showInput.toLowerCase().replace(/\s+/g, '') + '.html'; // Redirect to specific show page
-            }
-        });
+    if (entryInput.trim() !== "") {
+        const reviews = JSON.parse(localStorage.getItem(showName)) || [];
+        reviews.push(entryInput);
+        localStorage.setItem(showName, JSON.stringify(reviews));
+        alert('Review saved!');
+        window.location.href = `${showName}.html`;  // Redirect to the show page
+    }
+});
 
         document.getElementById('clearEntries').addEventListener('click', function() {
             localStorage.clear();
