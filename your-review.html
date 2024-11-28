@@ -21,6 +21,9 @@
 <body>
     <h1>New Review Entry</h1>
     <form id="entryForm">
+    <label for="nameInput">Enter your name:</label><br>
+    <input type="text" id="nameInput" required placeholder="Your name"><br><br>
+
     <label for="showName">Select Show:</label>
     <select id="showName" required>
         <option value="" disabled selected>Select a Show</option>
@@ -34,12 +37,14 @@
         <option value="Beverly Hills, 90210">Beverly Hills, 90210</option>
         <option value="Once Upon A Time">Once Upon A Time</option>
         <option value="Heartland">Heartland</option>
-    </select><br>
+    </select><br><br>
 
     <label for="entryInput">Enter your review:</label><br>
-    <textarea id="entryInput" required></textarea><br>
+    <textarea id="entryInput" required placeholder="Write your review here..."></textarea><br><br>
+    
     <button type="submit">Submit</button>
 </form>
+
 
 
     <button id="clearEntries" style="margin-top: 10px;">Clear All Reviews</button>
