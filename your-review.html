@@ -60,10 +60,16 @@
 });
 
         document.getElementById('clearEntries').addEventListener('click', function() {
-            localStorage.clear();
-            alert('All entries have been cleared!');
-            window.location.reload();
-        });
+    const showName = document.getElementById('showName').value;
+    if (showName) {
+        localStorage.removeItem(showName);  // Only clear reviews for the selected show
+        alert(`Reviews for ${showName} have been cleared!`);
+        window.location.reload();
+    } else {
+        alert("Please select a show to clear reviews.");
+    }
+});
+
     </script>
 
     <a href="index.html">Home</a>
