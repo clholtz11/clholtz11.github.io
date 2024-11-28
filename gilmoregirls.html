@@ -264,38 +264,39 @@ footer {
         <th onclick="showInfo('Review', 'gg_review.txt')">Review</th>
      </tr>
    </table>
-   <div id="info-box">
-      
-      <hr>
-      <h3><strong>Click one of the rows to see more information about my #1 show: Gilmore Girls!</strong></h3>
-      <hr>
-      <img src="https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQe8tw0VCGrNoOsmYxN6frjj9etN5NxAhQAEhEvySH7IbiMQV5RkoDy2os0hnShW1ZMAiRjuuwkCfIjCSGOiNWdRGcJq3Xn_FYHnqb9M9hH2W2KUrQ80JqWZ93yvbtE1em1m8432foTW_r3GX56WB37UbNPk.jpg" style="width: 30%;">
-   </div>
+   <div id="output">
+    <hr>
+    <h2>Entries:</h2>
+    <ol id="entryList" style="font-family: Georgia, Serif; font-size: 30px; color: #621621; text-align: center; margin: auto;"></ol>
+</div>
 
-   <script>
-function showInfo(title, file) {
-    const infoBox = document.getElementById('info-box');
-    infoBox.innerHTML = `<p>Loading ${title}...</p>`;
-    fetch(file)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`Could not load ${file}`);
+<script>
+    window.onload = function() {
+        const entries = JSON.parse(localStorage.getItem('entries')) || [];
+        const entryList = document.getElementById('entryList');
+        entryList.innerHTML = ''; 
+        entries.forEach(entry => {
+            const li = document.createElement('li');
+            li.textContent = entry;
+            entryList.appendChild(li);
+        });
+    };
+
+    const form = document.getElementById('entryForm');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        const entryInput = document.getElementById('entryInput').value;
+
+        if (entryInput.trim() !== "") {
+            const entries = JSON.parse(localStorage.getItem('entries')) || [];
+            entries.push(entryInput);
+            localStorage.setItem('entries', JSON.stringify(entries));
+            window.location.href = 'gilmoregirls.html'; // Redirect back to the page
         }
-        return response.text(); 
-      })
-      .then(data => {
-        infoBox.innerHTML = `
-          <hr>
-          <h2 style="color: #59b69a">${title}</h2>
-          <hr>
-          <h3 style="width: 75%">${data}</h3>
-        `;
-      })
-      .catch(error => {
-        infoBox.innerHTML = `<p>Error loading content: ${error.message}</p>`;
-      });
-}
+    });
 </script>
+
 <hr>
 <div class="preserve-line-breaks">
 <h2>Want to leave your own review?</h2>
