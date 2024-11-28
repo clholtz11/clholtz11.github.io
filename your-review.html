@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <title>New Review</title>
+    <style>
+        textarea {
+            width: 100%;
+            height: 150px;
+            font-size: 16px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input, button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>New Review Entry</h1>
+    <form id="entryForm">
+        <label for="showInput">Enter the name of the show:</label><br>
+        <input type="text" id="showInput" required placeholder="Enter show name"><br>
+        <label for="entryInput">Enter your review of this show:</label><br>
+        <textarea id="entryInput" required></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <button id="clearEntries" style="margin-top: 10px;">Clear All Reviews</button>
+
+    <script>
+        document.getElementById('entryForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const showInput = document.getElementById('showInput').value.trim();
+            const entryInput = document.getElementById('entryInput').value.trim();
+            
+            if (showInput !== "" && entryInput !== "") {
+                // Create an entry object to store the review
+                const entry = { review: entryInput, show: showInput };
+                const showReviews = JSON.parse(localStorage.getItem(showInput)) || [];
+                showReviews.push(entry);
+                localStorage.setItem(showInput, JSON.stringify(showReviews));
+
+                alert('Review submitted for ' + showInput);
+                window.location.href = showInput.toLowerCase().replace(/\s+/g, '') + '.html'; // Redirect to specific show page
+            }
+        });
+
+        document.getElementById('clearEntries').addEventListener('click', function() {
+            localStorage.clear();
+            alert('All entries have been cleared!');
+            window.location.reload();
+        });
+    </script>
+
+    <a href="index.html">Home</a>
+</body>
+</html>
