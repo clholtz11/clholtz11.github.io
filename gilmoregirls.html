@@ -4,17 +4,14 @@
 <title>Show & Share Homepage</title>  
 <script>
     window.onload = function() {
-    // Load saved entries from localStorage and display
     const entries = JSON.parse(localStorage.getItem('entries')) || [];
     const entryList = document.getElementById('entryList');
-    entryList.innerHTML = ''; // Clear any existing list
+    entryList.innerHTML = ''; 
     entries.forEach(entry => {
         const li = document.createElement('li');
         li.textContent = entry;
         entryList.appendChild(li);
     });
-
-    // Load background color if saved
     if (localStorage.getItem("backgroundColor")) {
         document.body.style.backgroundColor = localStorage.getItem("backgroundColor");
     }
@@ -310,28 +307,20 @@ It'll get saved directly to this page for everyone to see!</h3>
     <div id="output">
         <hr>
         <h2>Entries:</h2>
-        <ul id="entryList"></ul>
+        <ol id="entryList" style="font-family: Georgia, Serif; font-size: 30px; color: #621621; text-align: center; margin: auto;"></ol>
     </div>
 
     <script>
         const form = document.getElementById('entryForm');
 
         form.addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent page refresh
-
+            event.preventDefault(); 
             const entryInput = document.getElementById('entryInput').value;
 
             if (entryInput.trim() !== "") {
-                // Retrieve existing entries from localStorage
                 const entries = JSON.parse(localStorage.getItem('entries')) || [];
-                
-                // Add new entry to the list
                 entries.push(entryInput);
-                
-                // Save updated entries back to localStorage
                 localStorage.setItem('entries', JSON.stringify(entries));
-
-                // Redirect back to the main page
                 window.location.href = 'gilmoregirls.html';
             }
         });
