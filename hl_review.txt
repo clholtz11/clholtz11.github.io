@@ -1,0 +1,12 @@
+<div class="preserve-line-breaks">
+Overall, I've given this show an 8/10 on IMDb. This rating is solely based on the first 5 seasons since that's how far I've made it so far. 
+
+Currently, I liked the first couple of seasons, but it began to drop off around the end of season 4. I still really want to finish watching this show, but I needed to pause since it is so long and still in production. 
+</div>
+
+<button onclick="toggleSpoiler()" style="margin-top: 10px; padding: 5px 10px;">Spoiler</button>
+<div class="preserve-line-breaks" id="spoiler" style="display: none; margin-top: 10px; padding: 10px; border: 1px solid #ccc; background-color: #f9f9f9;">
+SPOILER!!
+
+I do not have any spoilers as of now, except that there was some character development with some of the cast members. 
+</div>

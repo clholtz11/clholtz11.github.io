@@ -1,0 +1,15 @@
+<div class="preserve-line-breaks">
+Genres: <a href="genre-drama.html">Drama</a>, Family
+
+Theme Song: <a href="https://youtu.be/1RE2L4ITGvw?si=f8JBITNxKFTu2Cuz"target="_blank">Dreamer</a>: Jenn Grant
+
+Release Date: October 14, 2007 (USA & Canada)
+
+Streaming Platforms: <a href="stream-netflix.html">Netflix</a>
+
+Average runtime per episode: 45 minutes
+
+Primary filming location: Longview, Alberta, Canada
+
+<a href="https://www.imdb.com/title/tt1094229/awards/?ref_=tt_awd"target="_blank">Awards:</a> 29 wins & 73 nominations
+</div>

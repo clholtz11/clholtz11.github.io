@@ -1,0 +1,18 @@
+<div class="preserve-line-breaks">
+Overall, I've given this show an 8/10 on IMDb. My favorite part about this show is the tie-in to all of the classic fairytale stories, with some extra drama thrown into the storyline to make it its own story (in a way). By a landslide, the best character in the show has got to be Regina (Lana Parrilla). Her character development in the show is underestimated at times, as she does have her moments of "Evil Queen" behavior throughout the run of the show. 
+
+My favorite season of the show is probably season 3. This is when there were two of my all-time favorite stories of the show, and the season finale is my favorite one as well. There are so many other good seasons, but this is definitely at the top of my list.
+
+If I had to be completely honest, season 1 is one of my least favorite seasons on a rewatch, just because there is no magic in town yet.
+</div>
+
+<button onclick="toggleSpoiler()" style="margin-top: 10px; padding: 5px 10px;">Spoiler</button>
+<div class="preserve-line-breaks" id="spoiler" style="display: none; margin-top: 10px; padding: 10px; border: 1px solid #ccc; background-color: #f9f9f9;">
+SPOILER!!
+
+If I could rate this show based on the first 5 seasons, it would easily become a 10/10 & skyrocket up to #4 on my list. When they did the time jump in season 7 with a new curse and brand new characters, this was a hard story to get behind because it felt very rushed. Once I got further into the season, it wasn't a terrible one, I just would still call it one of my least favorite seasons. 
+
+The amount of people that are related to each other (unknowingly) in the show is always crazy to me, even on a rewatch. One of the biggest surprises for me was finding out that Peter Pan was Rumplestilkskins' father. Learning this made the show feel so crazy.
+
+If I were to pick my least favorite main character, it would definitely be Rumple. Although I absolutely love his little quirks, I feel like overall he was a toxic character and only thought about himself. 
+</div>
