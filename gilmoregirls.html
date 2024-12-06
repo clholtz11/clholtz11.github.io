@@ -9,8 +9,8 @@
             document.body.style.backgroundColor = localStorage.getItem("backgroundColor");
         }
 
-        // Load reviews for Gilmore Girls (or dynamic show based on page)
-        const showName = "Gilmore Girls";  // You can update this dynamically based on the page
+        // Load reviews for Gilmore Girls
+        const showName = "Gilmore Girls";
         const reviews = JSON.parse(localStorage.getItem(showName)) || [];
         
         const reviewList = document.getElementById('reviewList');
@@ -22,7 +22,7 @@
             reviewList.appendChild(li);
         });
     };
-
+    // function to reveal or hide the spoiler section of the page
     function toggleSpoiler() {
       const spoiler = document.getElementById("spoiler");
       const button = document.querySelector(".button");
@@ -329,7 +329,7 @@ footer {
                 const entries = JSON.parse(localStorage.getItem(showName)) || [];
                 entries.push(entryInput);
                 localStorage.setItem(showName, JSON.stringify(entries));
-                window.location.href = `${showName.toLowerCase().replace(/\s/g, '')}.html`; // Redirect back to the show-specific page
+                window.location.href = `${showName.toLowerCase().replace(/\s/g, '')}.html`; // Redirect back to the show's page
             }
         });
     </script>
